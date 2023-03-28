@@ -1,0 +1,20 @@
+{
+  "name": "silent-toes-7433",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avnishsingh0/silent-toes-7433.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avnishsingh0/silent-toes-7433/issues"
+  },
+  "homepage": "https://github.com/avnishsingh0/silent-toes-7433#readme"
+}
