@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/avnishsingh0/silent-toes-7433/issues"
   },
-  "homepage": "https://github.com/avnishsingh0/silent-toes-7433#readme"
+  "homepage": "https://github.com/avnishsingh0/silent-toes-7433#readme",
+  "dependencies": {
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.22"
+  }
 }
