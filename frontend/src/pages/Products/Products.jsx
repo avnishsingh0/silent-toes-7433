@@ -12,6 +12,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Loading from "./Loading";
+import Pagination from "./Pagination";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -405,8 +406,8 @@ const Products = () => {
             gap={6}
           >
             {products.map((ele) => (
-              <GridItem>
-                <Link to={`/newproducts/${ele._id}`}>
+              <GridItem key={ele._id}>
+                <Link to={`/product/${ele._id}`}>
                   <Box
                     position="relative"
                     border="1px solid"
@@ -528,7 +529,7 @@ const Products = () => {
           </Grid>
         </Box>
       </Flex>
-      {/* <Pagination current={page} onChange={(value) => setPage(value)} /> */}
+      <Pagination current={page} onChange={(value) => setPage(value)} />
     </Box>
   );
 };
