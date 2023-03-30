@@ -27,6 +27,7 @@ const ProductDetails = () => {
     fetchSingleProduct();
   }, [id]);
   console.log(data)
+  
   return (
     <>
          <Grid
