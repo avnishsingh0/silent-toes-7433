@@ -1,0 +1,62 @@
+.input {
+    outline: 1px solid gray;
+    width: 90%;
+    padding: 8px;
+    margin: 14px;
+    text-align: left;
+    margin-left: 22px;
+    font-size: medium;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+  }
+  
+  #radio {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin-left: 22px;
+  }
+  .input:hover {
+    outline: 1.6px solid black;
+  }
+  #payment-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #shiping {
+    background-color: #00b9c6;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    align-items: "right";
+    justify-items: "margin-right";
+    margin-top: 4%;
+    padding: 10px;
+    width: 200px;
+    margin-left: 70%;
+  }
+  #shiping-disable {
+    background-color: #cccccc;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    align-items: "right";
+    justify-items: "margin-right";
+    margin-top: 4%;
+    padding: 10px;
+    width: 200px;
+    margin-left: 70%;
+  }
+  .card {
+    width: 90%;
+  }
+  

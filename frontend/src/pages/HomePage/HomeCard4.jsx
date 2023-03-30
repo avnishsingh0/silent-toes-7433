@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Text, Image, Grid, Flex,useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Image,
+  Grid,
+  Flex,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import ReactPlayer from "react-player";
 
 export const HomeCard4 = () => {
@@ -10,7 +17,7 @@ export const HomeCard4 = () => {
         _before={{
           content: '""',
           borderBottom: "2px solid",
-          borderColor: useColorModeValue('gray.200', 'gray.700'),
+          borderColor: useColorModeValue("gray.200", "gray.700"),
           flexGrow: 1,
           mr: 8,
           mb: 4,
@@ -18,7 +25,7 @@ export const HomeCard4 = () => {
         _after={{
           content: '""',
           borderBottom: "2px solid",
-          borderColor: useColorModeValue('gray.200', 'gray.700'),
+          borderColor: useColorModeValue("gray.200", "gray.700"),
           flexGrow: 1,
           ml: 4,
           mb: 4,
@@ -84,7 +91,7 @@ export const HomeCard4a = ({ type, heading }) => {
         _before={{
           content: '""',
           borderBottom: "2px solid",
-          borderColor: useColorModeValue('gray.200', 'gray.700'),
+          borderColor: useColorModeValue("gray.200", "gray.700"),
           flexGrow: 1,
           mr: 8,
           mb: 4,
@@ -92,7 +99,7 @@ export const HomeCard4a = ({ type, heading }) => {
         _after={{
           content: '""',
           borderBottom: "2px solid",
-          borderColor: useColorModeValue('gray.200', 'gray.700'),
+          borderColor: useColorModeValue("gray.200", "gray.700"),
           flexGrow: 1,
           ml: 4,
           mb: 4,
@@ -130,12 +137,12 @@ export const HomeCard4a = ({ type, heading }) => {
 export const HomeCard4b = ({ type, heading }) => {
   return (
     <Box w="95%" m="auto">
-     <Flex
+      <Flex
         align={"center"}
         _before={{
           content: '""',
           borderBottom: "2px solid",
-          borderColor: useColorModeValue('gray.200', 'gray.700'),
+          borderColor: useColorModeValue("gray.200", "gray.700"),
           flexGrow: 1,
           mr: 8,
           mb: 4,
@@ -143,20 +150,20 @@ export const HomeCard4b = ({ type, heading }) => {
         _after={{
           content: '""',
           borderBottom: "2px solid",
-          borderColor: useColorModeValue('gray.200', 'gray.700'),
+          borderColor: useColorModeValue("gray.200", "gray.700"),
           flexGrow: 1,
           ml: 4,
           mb: 4,
         }}
       >
-      <Text
-        fontSize={["15px", "15px", "15px", "30px", "30px"]}
-        pb="7"
-        fontWeight="500"
-        textAlign="center"
-      >
-        {heading}
-      </Text>
+        <Text
+          fontSize={["15px", "15px", "15px", "30px", "30px"]}
+          pb="7"
+          fontWeight="500"
+          textAlign="center"
+        >
+          {heading}
+        </Text>
       </Flex>
       <Grid
         templateColumns={{
