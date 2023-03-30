@@ -1,12 +1,8 @@
-import { Box, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, SimpleGrid} from "@chakra-ui/react";
 import React from "react";
 import SidebarWithHeader from "./Sidebar";
-// import { FiHome } from "react-icons/fi";
 import Chart from "react-apexcharts";
-// import { useSelector } from "react-redux";
 const Blog = () => {
-  // const  isLoadin  = useSelector((store) => store.AppReducer);
-  // console.log(isLoadin);
   return (
     <Box>
       <SidebarWithHeader />

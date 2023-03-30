@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import {
   IconButton,
@@ -10,13 +10,10 @@ import {
   VStack,
   Icon,
   useColorModeValue,
-  Link,
   Drawer,
   DrawerContent,
   Text,
   useDisclosure,
-  BoxProps,
-  FlexProps,
   Menu,
   MenuButton,
   MenuDivider,
@@ -33,8 +30,6 @@ import {
   FiBell,
   FiChevronDown,
 } from "react-icons/fi";
-// import { IconType } from "react-icons";
-// import { ReactText } from "react";
 const LinkItems = [
   { name: "Dashboard", icon: FiHome, links: "/adminpanel" },
   { name: "Packages", icon: FiTrendingUp, links: "/adminpanel/package" },
@@ -45,9 +40,8 @@ const LinkItems = [
 
 export default function SidebarWithHeader({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-// console.log(children);
   return (
-    <Box >
+    <Box>
       <SidebarContent
         onClose={() => onClose}
         display={{ base: "none", md: "block" }}
@@ -177,10 +171,7 @@ const MobileNav = ({ onOpen, ...rest }) => {
               _focus={{ boxShadow: "none" }}
             >
               <HStack>
-                <Avatar
-                  size={"sm"}
-                 
-                />
+                <Avatar size={"sm"} />
                 <VStack
                   display={{ base: "none", md: "flex" }}
                   alignItems="flex-start"
