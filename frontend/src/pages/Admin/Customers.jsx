@@ -12,14 +12,14 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import SidebarWithHeader from "./Sidebar";
-import InitialFocus from './Modal'
+import InitialFocus from "./Modal";
 const Customers = () => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
     getJewlery();
   }, [1]);
-  
+
   function getJewlery() {
     fetch("https://caratlane-database.vercel.app/products").then((result) => {
       result.json().then((resp) => {
@@ -55,21 +55,17 @@ const Customers = () => {
             </Tr>
           </Thead>
           {cart.map((product, index) => (
-            <Tbody key={index} >
+            <Tbody key={index}>
               <Tr>
-              <Td fontWeight={'bold'}>{index+1}.</Td>
+                <Td fontWeight={"bold"}>{index + 1}.</Td>
                 <Td>
-                  <Img
-                    w={50}
-                    h={50}
-                    src={product.image1}
-                  />
+                  <Img w={50} h={50} src={product.image1} />
                 </Td>
                 <Td>{product.name}</Td>
                 <Td>{product.price}</Td>
                 <Td>4000</Td>
                 <Td>
-                  <InitialFocus/>
+                  <InitialFocus />
                 </Td>
                 <Td>
                   <Button
@@ -85,8 +81,6 @@ const Customers = () => {
           ))}
         </Table>
       </TableContainer>
-
-     
     </Box>
   );
 };
