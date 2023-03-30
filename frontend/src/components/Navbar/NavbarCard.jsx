@@ -50,13 +50,13 @@ export const NavbarCard2 = () => {
   return (
     <Box cursor="pointer">
       <HStack m="auto">
-        <Box w="20%">
+        <Box w="15%">
           <Link to="/">
-            <Image src="https://i.imgur.com/OHxtfjd.png" alt="logo" w="75%" />
+            <Image src="http://drive.google.com/uc?export=view&id=17S3T84GN9LgKILJf262tSw-BneNJFr7m" alt="logo" w="75%" h="120px" />
           </Link>
         </Box>
         <HStack w="85%" m="auto">
-          <Box w="15%">
+          <Box w="15%" mr="5px">
             <HStack fontSize="18px" fontWeight="bold">
               <FiPhoneCall />
               <Text>1800-111-111</Text>
@@ -159,9 +159,9 @@ export const NavbarCard2 = () => {
 export const NavbarCard4 = () => {
   return (
     <Box cursor="pointer" bg="#fbf9f7" p={2.5}>
-      <Flex gap={4} pl={5} pt={2} justifyContent="space-between">
+      <Flex gap={1} pl={2} pt={1} justifyContent="space-between">
         <NavbarCard5 />
-        <HStack w="20%" ml="5%" justifyContent="right">
+        <HStack w="13%" ml="5%" justifyContent="right">
           <Image
             src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png"
             alt="img1"

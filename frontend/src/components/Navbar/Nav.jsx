@@ -43,12 +43,12 @@ function Nav() {
       p={2.5}
     >
       <HStack m="auto">
-        <Box w="20%">
+        <Box w="12%"> 
           <Link to="/">
-            <Image src="https://i.imgur.com/OHxtfjd.png" alt="logo" w="75%" />
+            <Image src="http://drive.google.com/uc?export=view&id=17S3T84GN9LgKILJf262tSw-BneNJFr7m" alt="logo" w="75%" />
           </Link>
         </Box>
-        <Box w="70%">
+        <Box w="100%">
           <Input
             placeholder="What are you looking for"
             border="1px solid black"
