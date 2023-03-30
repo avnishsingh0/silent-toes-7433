@@ -10,7 +10,7 @@ const HomeCard = ({ type }) => {
           md: "repeat(3,1fr)",
           lg: "repeat(4,1fr)",
           xl: "repeat(6,1fr)",
-          "2xl": "repeat(6,1fr)"
+          "2xl": "repeat(6,1fr)",
         }}
         gap={6}
         w="99%"
