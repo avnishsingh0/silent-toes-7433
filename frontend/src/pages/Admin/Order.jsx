@@ -1,33 +1,30 @@
-import SidebarWithHeader from './Sidebar'
+import SidebarWithHeader from "./Sidebar";
 import {
   Box,
   Button,
-  // Img,
-  // Input,
   Table,
   TableContainer,
   Tbody,
   Td,
-  // Tfoot,
   Th,
   Thead,
   Tr,
 } from "@chakra-ui/react";
-// import CutomerBody from "./CutomerBody";
 import React, { useEffect, useState } from "react";
-// import SidebarWithHeader from "./Sidebar";
+
 const Order = () => {
   const [cart, setCart] = useState([]);
   useEffect(() => {
     getJewlery();
   }, [1]);
   function getJewlery() {
-    fetch("https://caratlane-database.vercel.app/customerData").then((result) => {
-      result.json().then((resp) => {
-        // console.log(resp);
-        setCart(resp);
-      });
-    });
+    fetch("https://caratlane-database.vercel.app/customerData").then(
+      (result) => {
+        result.json().then((resp) => {
+          setCart(resp);
+        });
+      }
+    );
   }
   function deleteItem(id) {
     fetch(`https://caratlane-database.vercel.app/customerData/${id}`, {
@@ -41,53 +38,51 @@ const Order = () => {
   }
   return (
     <Box>
-    <SidebarWithHeader />
-    <TableContainer>
-      <Table size="sm" ml={250} w={"80%"}>
-        <Thead>
-          <Tr>
-            <Th>User Name</Th>
-            <Th>User Address</Th>
-            <Th>Address</Th>
-            <Th>No of Item</Th>
-            
-            <Th>Reject</Th>
-          </Tr>
-        </Thead>
-
-        {cart.map((product, index) => (
-          <Tbody key={index}>
+      <SidebarWithHeader />
+      <TableContainer>
+        <Table size="sm" ml={250} w={"80%"}>
+          <Thead>
             <Tr>
-              <Td>
-              {product.fullName}
-                {/* <Img
+              <Th>User Name</Th>
+              <Th>User Address</Th>
+              <Th>Address</Th>
+              <Th>No of Item</Th>
+
+              <Th>Reject</Th>
+            </Tr>
+          </Thead>
+
+          {cart.map((product, index) => (
+            <Tbody key={index}>
+              <Tr>
+                <Td>
+                  {product.fullName}
+                  {/* <Img
                   w={50}
                   h={50}
                   src={product.image1}
                 /> */}
-              </Td>
-              <Td>{product.address}</Td>
-              <Td>{product.city}</Td>
-              <Td>{product.numOfItems}</Td>
-              
-              <Td>
-                <Button
-                  bg="tomato"
-                  variant="solid"
-                  onClick={() => deleteItem(product.id)}
-                >
-                  Reject
-                </Button>
-              </Td>
-            </Tr>
-          </Tbody>
-        ))}
-      </Table>
-    </TableContainer>
+                </Td>
+                <Td>{product.address}</Td>
+                <Td>{product.city}</Td>
+                <Td>{product.numOfItems}</Td>
 
-   
-  </Box>
-  )
-}
+                <Td>
+                  <Button
+                    bg="tomato"
+                    variant="solid"
+                    onClick={() => deleteItem(product.id)}
+                  >
+                    Reject
+                  </Button>
+                </Td>
+              </Tr>
+            </Tbody>
+          ))}
+        </Table>
+      </TableContainer>
+    </Box>
+  );
+};
 
-export default Order
+export default Order;
