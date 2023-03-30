@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Image, HStack, Flex, Center, Grid } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, Center, Grid } from "@chakra-ui/react";
 import { AiFillFacebook } from "react-icons/ai";
 import { TfiTwitter } from "react-icons/tfi";
 import { AiOutlineInstagram } from "react-icons/ai";
