@@ -11,7 +11,7 @@ const Footer = () => {
           base: "repeat(1,1fr)",
           sm: "repeat(1,1fr)",
           md: "repeat(2,1fr)",
-          lg: "repeat(2,1fr)"
+          lg: "repeat(2,1fr)",
         }}
         justifyContent="space-between"
         textAlign="left"
@@ -23,7 +23,7 @@ const Footer = () => {
               base: "repeat(1,1fr)",
               sm: "repeat(2,1fr)",
               md: "repeat(2,1fr)",
-              lg: "repeat(3,1fr)"
+              lg: "repeat(3,1fr)",
             }}
             gap="5"
           >
@@ -36,8 +36,8 @@ const Footer = () => {
           <FooterCard2 />
         </Center>
       </Grid>
-      <br/>
-      <br/>
+      <br />
+      <br />
       <FooterCard />
     </Box>
   );
