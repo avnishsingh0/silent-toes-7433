@@ -1,13 +1,72 @@
-import { Box, SimpleGrid} from "@chakra-ui/react";
-import React from "react";
+import { Box, SimpleGrid } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
+import { Piechart } from "./PieChat";
 import SidebarWithHeader from "./Sidebar";
-import Chart from "react-apexcharts";
+
 const Blog = () => {
+  const [allproducts, setAllProducts] = useState(0);
+  const [men, setMens] = useState(0);
+  const [women, setWomen] = useState(0);
+  const [kids, setKids] = useState(0);
+  const [both, setBoth] = useState(0);
+
+  useEffect(() => {
+    getAllProduct();
+    getMen();
+    getWomen();
+    getKids();
+    getBoth();
+  }, []);
+
+  function getAllProduct() {
+    fetch("http://localhost:4500/allproducts").then((result) => {
+      result.json().then((res) => {
+        console.log("allproducts", res.length);
+        setAllProducts(res.length);
+      });
+    });
+  }
+
+  function getMen() {
+    fetch("http://localhost:4500/Men").then((result) => {
+      result.json().then((res) => {
+        console.log("Men", res.length);
+        setMens(res.length);
+      });
+    });
+  }
+
+  function getWomen() {
+    fetch("http://localhost:4500/Women").then((result) => {
+      result.json().then((res) => {
+        console.log("Women", res.length);
+        setWomen(res.length);
+      });
+    });
+  }
+
+  function getKids() {
+    fetch("http://localhost:4500/Kids").then((result) => {
+      result.json().then((res) => {
+        console.log("Kids", res.length);
+        setKids(res.length);
+      });
+    });
+  }
+
+  function getBoth() {
+    fetch("http://localhost:4500/Both").then((result) => {
+      result.json().then((res) => {
+        console.log("Both", res.length);
+        setBoth(res.length);
+      });
+    });
+  }
   return (
     <Box>
       <SidebarWithHeader />
-      <Box ml={250}>
-        <SimpleGrid fontWeight={"bold"} columns={[1, 3, 3, 4]}>
+      <Box ml={["5","","250"]} mt={5}>
+        <SimpleGrid fontWeight={"bold"} columns={[2, 3, 3, 5]} gap={4}>
           <Box
             _hover={{
               bg: "cyan.800",
@@ -23,7 +82,8 @@ const Blog = () => {
             h={20}
             w={150}
           >
-            Packages <br />24{" "}
+            AllProduct <br />
+            {allproducts}{" "}
           </Box>
           <Box
             _hover={{
@@ -40,7 +100,8 @@ const Blog = () => {
             h={20}
             w={150}
           >
-            Customers <br />3
+            Mens <br />
+            {men}
           </Box>
           <Box
             _hover={{
@@ -57,7 +118,8 @@ const Blog = () => {
             h={20}
             w={150}
           >
-            Gift Card <br />0
+            Women <br />
+            {women}
           </Box>
           <Box
             _hover={{
@@ -74,25 +136,32 @@ const Blog = () => {
             h={20}
             w={150}
           >
-            Income <br />10000  
+            Kids <br />
+            {kids}
+          </Box>
+          <Box
+            _hover={{
+              bg: "cyan.800",
+              color: "white",
+              cursor: "pointer",
+            }}
+            borderRadius={15}
+            bg={"cyan.300"}
+            color={"black"}
+            display={"grid"}
+            textAlign={"center"}
+            alignItems={"center"}
+            h={20}
+            w={150}
+          >
+            Men and Women <br />
+            {both}
           </Box>
         </SimpleGrid>
       </Box>
 
       <Box mt={75}>
-        <Chart
-          type="pie"
-          width={1100}
-          height={350}
-          series={[24, 35, 0, 30]}
-          options={{
-            
-            noData: { text: "Empty Data" },
-            labels: ["Packages", "Customers", "Gift Card", "Income"],
-          }}
-        >
-          
-        </Chart>
+        <Piechart />
       </Box>
     </Box>
   );

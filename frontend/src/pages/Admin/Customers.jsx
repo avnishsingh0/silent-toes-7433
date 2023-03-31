@@ -18,10 +18,10 @@ const Customers = () => {
 
   useEffect(() => {
     getJewlery();
-  }, [1]);
+  }, []);
 
   function getJewlery() {
-    fetch("https://caratlane-database.vercel.app/products").then((result) => {
+    fetch("http://localhost:4500/products").then((result) => {
       result.json().then((resp) => {
         setCart(resp);
       });
@@ -29,7 +29,7 @@ const Customers = () => {
   }
 
   function deleteItem(id) {
-    fetch(`https://caratlane-database.vercel.app/products/${id}`, {
+    fetch(`http://localhost:4500/products/${id}`, {
       method: "DELETE",
     }).then((result) => {
       result.json().then((resp) => {
@@ -59,7 +59,7 @@ const Customers = () => {
               <Tr>
                 <Td fontWeight={"bold"}>{index + 1}.</Td>
                 <Td>
-                  <Img w={50} h={50} src={product.image1} />
+                  <Img w={50} h={50} src={product.imageTsrc} />
                 </Td>
                 <Td>{product.name}</Td>
                 <Td>{product.price}</Td>
