@@ -5,20 +5,14 @@ const productRouter = express.Router();
 
 productRouter.use(express.json());
 
-productRouter.get("/", async(req, res) => {
+productRouter.get("/", async (req, res) => {
   const query = {};
-  
-  const data = await ProductModel.find();
-//   console.log(data)
-//   
   if (req.query.rating) {
     query.rating = req.query.rating;
   }
   if (req.query.colors) {
     query.colors = { $regex: req.query.colors };
-    
   }
-  
   if (req.query.price) {
     query.price = req.query.price;
   }
@@ -50,17 +44,20 @@ productRouter.get("/", async(req, res) => {
     query.productRefLink = { $regex: req.query.productRefLink, $options: "i" };
   }
 
-  data.find(query, (error, data) => {
-      if (error) {
-        res.status(500).send(error);
-      } else {
-        res.send("data");
-      }
-    })
-    .sort({ price: req.query.sort === "lowtohigh" ? 1 : -1 })
-    .skip(parseInt(req.query.page) * 12)
-    .limit(12);
+  try {
+    const prod = await ProductModel.find(query)
+      .sort({ price: req.query.sort === "lowtohigh" ? 1 : -1 })
+      .skip(parseInt(req.query.page) * 12)
+      .limit(12);
+      // console.log(prod)
+    res.send(prod);
+
+  } catch (error) {
+    res.status(500).send(error);
+  }
 });
+
+
 
 productRouter.get("/:id", async (req, res) => {
   try {
