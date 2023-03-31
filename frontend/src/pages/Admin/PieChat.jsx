@@ -61,18 +61,18 @@ export function Piechart() {
   }, []);
 
   return (
-    <Box ml={["3", "","200", "250"]}>
+    <Box ml={["3", "", "200", "250"]}>
       <SimpleGrid
         fontWeight={"bold"}
-        width={["100%","100%","70%","100%"]}
+        width={["100%", "100%", "70%", "100%"]}
         margin={"auto"}
         columns={[1, 1, 1, 4]}
         borderRadius="36px"
         boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px;"}
         alignItems="center"
-        gap={["", "","","700px"]}
+        gap={["", "", "", "700px"]}
       >
-        <Box ml={["","","","130px"]}>
+        <Box ml={["", "", "", "130px"]}>
           <PieChart width={380} height={400}>
             <Pie
               dataKey="value"

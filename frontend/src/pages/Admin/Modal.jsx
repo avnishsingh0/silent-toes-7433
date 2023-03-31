@@ -34,11 +34,9 @@ export default function InitialFocus() {
         finalFocusRef={finalRef}
         isOpen={isOpen}
         onClose={onClose}
-        
-        // justifyContent={"center"}
       >
         <ModalOverlay />
-        <ModalContent mt={["","","20%","5%"]}>
+        <ModalContent mt={["", "", "20%", "5%"]}>
           <ModalHeader>Add Your Products</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>

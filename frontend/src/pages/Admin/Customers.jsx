@@ -23,7 +23,6 @@ const Customers = () => {
   function getJewlery() {
     fetch("http://localhost:4500/allproducts").then((result) => {
       result.json().then((resp) => {
-        // console.log("allproduct",resp)
         setCart(resp);
       });
     });
@@ -40,9 +39,9 @@ const Customers = () => {
     });
   }
   return (
-    <Box >
+    <Box>
       <SidebarWithHeader />
-      <TableContainer fontSize={["12px", "12px", "20px", "20px"]} >
+      <TableContainer fontSize={["12px", "12px", "20px", "20px"]}>
         <Table
           size="40px"
           ml={["", "", "250", "250"]}
@@ -60,9 +59,11 @@ const Customers = () => {
             </Tr>
           </Thead>
           {cart.map((product, index) => (
-            <Tbody key={index} >
+            <Tbody key={index}>
               <Tr>
-                <Td fontWeight={"bold"} textAlign={"center"}>{index + 1}.</Td>
+                <Td fontWeight={"bold"} textAlign={"center"}>
+                  {index + 1}.
+                </Td>
                 <Td textAlign={"center"}>
                   <Img
                     w={["10", "10", "20", "80%"]}

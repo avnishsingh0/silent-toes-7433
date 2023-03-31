@@ -16,7 +16,7 @@ const Order = () => {
   const [cart, setCart] = useState([]);
   useEffect(() => {
     getJewlery();
-  }, [1]);
+  }, []);
 
   function getJewlery() {
     fetch("https://caratlane-database.vercel.app/customerData").then(

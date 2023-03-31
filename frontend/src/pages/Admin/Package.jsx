@@ -1,4 +1,12 @@
-import { Box, Button, Center, Heading, Input, Select, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Center,
+  Heading,
+  Input,
+  Select,
+  Text,
+} from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import SidebarWithHeader from "./Sidebar";
 import Aos from "aos";
@@ -35,15 +43,17 @@ const Package = () => {
       <Center>
         <Box
           p={5}
-          ml={["","","180","300"]}
+          ml={["", "", "180", "300"]}
           mt={50}
-          w={["90%","","50%","30%"]}
+          w={["90%", "", "50%", "30%"]}
           border={"2px solid cyan"}
           borderRadius={15}
           textAlign={"center"}
           data-aos="fade-left"
         >
-          <Heading color="cyan.500" fontWeight={600}>ADD PRODUCT</Heading>
+          <Heading color="cyan.500" fontWeight={600}>
+            ADD PRODUCT
+          </Heading>
           <br />
           <br />
           <Select border={"1px solid cyan"} placeholder="Select Gender">
