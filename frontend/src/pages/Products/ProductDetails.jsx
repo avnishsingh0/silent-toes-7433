@@ -19,7 +19,7 @@ const ProductDetails = () => {
   const navigate = useNavigate();
 
   const fetchSingleProduct = () => {
-    axios(`https://harlequin-fawn-tutu.cyclic.app/product/${id}`)
+    axios(`https://busy-blue-chick-tie.cyclic.app/product/${id}`)
       .then((res) => setData(res.data.product))
       .catch((err) => console.log(err));
   };
