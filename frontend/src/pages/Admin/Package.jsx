@@ -1,21 +1,21 @@
-import { Box, Button, Center, Input, Select, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Heading, Input, Select, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import SidebarWithHeader from "./Sidebar";
 import Aos from "aos";
 const Package = () => {
   const [name, setName] = useState("");
-  const [type, setType] = useState("");
-  const [image1, setImage] = useState("");
+  const [productType, setProductType] = useState("");
+  const [imageTsrc, setimageTsrc] = useState("");
   const [price, setPrice] = useState("");
-  const [catogery, setCatogery] = useState("");
+  const [gender, setGender] = useState("");
 
   useEffect(() => {
     Aos.init({ duration: 1500 }, { offset: 200 });
   }, []);
 
   function saveData() {
-    let data = { name, image1, price, type, catogery };
-    fetch("https://caratlane-database.vercel.app/products", {
+    let data = { name, imageTsrc, price, productType, gender };
+    fetch("http://localhost:4500/allproducts", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -35,25 +35,49 @@ const Package = () => {
       <Center>
         <Box
           p={5}
-          ml={300}
+          ml={["","","180","300"]}
           mt={50}
-          w={"30%"}
+          w={["90%","","50%","30%"]}
           border={"2px solid cyan"}
           borderRadius={15}
           textAlign={"center"}
           data-aos="fade-left"
         >
-          <label>ADD PRODUCT</label>
+          <Heading color="cyan.500" fontWeight={600}>ADD PRODUCT</Heading>
           <br />
           <br />
-          <Select placeholder="Select Catogery">
+          <Select border={"1px solid cyan"} placeholder="Select Gender">
             <option
-              value={catogery}
+              value={gender}
               onChange={(e) => {
-                setCatogery(e.target.value);
+                setGender(e.target.value);
               }}
             >
-              Jwellery
+              Men
+            </option>
+            <option
+              value={gender}
+              onChange={(e) => {
+                setGender(e.target.value);
+              }}
+            >
+              Women
+            </option>
+            <option
+              value={gender}
+              onChange={(e) => {
+                setGender(e.target.value);
+              }}
+            >
+              Kids
+            </option>
+            <option
+              value={gender}
+              onChange={(e) => {
+                setGender(e.target.value);
+              }}
+            >
+              Men,Women
             </option>
           </Select>
           <br />
@@ -68,25 +92,25 @@ const Package = () => {
           <br />
 
           <Input
-            placeholder="Enter image url"
-            value={image1}
+            placeholder="Enter ImageURL"
+            value={imageTsrc}
             onChange={(e) => {
-              setImage(e.target.value);
+              setimageTsrc(e.target.value);
             }}
           />
           <br />
           <br />
           <Input
-            placeholder="Enter-type"
-            value={type}
+            placeholder="Enter Product type"
+            value={productType}
             onChange={(e) => {
-              setType(e.target.value);
+              setProductType(e.target.value);
             }}
           />
           <br />
           <br />
           <Input
-            placeholder="Enter-Price"
+            placeholder="Enter Price"
             value={price}
             onChange={(e) => {
               setPrice(e.target.value);

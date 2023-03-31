@@ -32,7 +32,7 @@ import {
 } from "react-icons/fi";
 const LinkItems = [
   { name: "Dashboard", icon: FiHome, links: "/adminpanel" },
-  { name: "Packages", icon: FiTrendingUp, links: "/adminpanel/package" },
+  { name: "Add Product", icon: FiTrendingUp, links: "/adminpanel/package" },
   { name: "Customers", icon: FiCompass, links: "/adminpanel/customers" },
   { name: "Orders", icon: FiStar, links: "/adminpanel/order" },
   { name: "Account", icon: FiSettings, links: "/logis" },
