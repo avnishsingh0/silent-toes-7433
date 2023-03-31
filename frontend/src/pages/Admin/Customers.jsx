@@ -18,18 +18,19 @@ const Customers = () => {
 
   useEffect(() => {
     getJewlery();
-  }, [1]);
+  }, []);
 
   function getJewlery() {
-    fetch("https://caratlane-database.vercel.app/products").then((result) => {
+    fetch("http://localhost:4500/allproducts").then((result) => {
       result.json().then((resp) => {
+        // console.log("allproduct",resp)
         setCart(resp);
       });
     });
   }
 
   function deleteItem(id) {
-    fetch(`https://caratlane-database.vercel.app/products/${id}`, {
+    fetch(`http://localhost:4500/allproducts/${id}`, {
       method: "DELETE",
     }).then((result) => {
       result.json().then((resp) => {
@@ -39,36 +40,45 @@ const Customers = () => {
     });
   }
   return (
-    <Box>
+    <Box >
       <SidebarWithHeader />
-      <TableContainer>
-        <Table size="sm" ml={250} w={"80%"}>
+      <TableContainer fontSize={["12px", "12px", "20px", "20px"]} >
+        <Table
+          size="40px"
+          ml={["", "", "250", "250"]}
+          w={["95%", "80%", "70%", "85%"]}
+          m={"auto"}
+        >
           <Thead>
             <Tr>
-              <Th>Sl.No</Th>
-              <Th>Item Image</Th>
-              <Th>Item name</Th>
-              <Th>Offer Price</Th>
-              <Th>Real Price</Th>
-              <Th>Item Edit</Th>
-              <Th>Item Delete</Th>
+              <Th textAlign={"center"}>S.No</Th>
+              <Th textAlign={"center"}>Image</Th>
+              <Th textAlign={"center"}>Name</Th>
+              <Th textAlign={"center"}>Price</Th>
+              <Th textAlign={"center"}>Item Edit</Th>
+              <Th textAlign={"center"}>Item Delete</Th>
             </Tr>
           </Thead>
           {cart.map((product, index) => (
-            <Tbody key={index}>
+            <Tbody key={index} >
               <Tr>
-                <Td fontWeight={"bold"}>{index + 1}.</Td>
-                <Td>
-                  <Img w={50} h={50} src={product.image1} />
+                <Td fontWeight={"bold"} textAlign={"center"}>{index + 1}.</Td>
+                <Td textAlign={"center"}>
+                  <Img
+                    w={["10", "10", "20", "80%"]}
+                    h={["5", "5", "10", "50"]}
+                    src={product.imageTsrc}
+                  />
                 </Td>
-                <Td>{product.name}</Td>
-                <Td>{product.price}</Td>
-                <Td>4000</Td>
-                <Td>
+                <Td textAlign={"center"}>{product.name}</Td>
+                <Td textAlign={"center"}>{product.price}</Td>
+                <Td textAlign={"center"}>
                   <InitialFocus />
                 </Td>
-                <Td>
+                <Td textAlign={"center"}>
                   <Button
+                    w={["16", "14", "20", "50"]}
+                    h={["19", "18", "23", "50"]}
                     bg="tomato"
                     variant="solid"
                     onClick={() => deleteItem(product.id)}
