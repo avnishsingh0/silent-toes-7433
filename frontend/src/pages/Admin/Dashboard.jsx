@@ -65,7 +65,7 @@ const Blog = () => {
   return (
     <Box>
       <SidebarWithHeader />
-      <Box ml={["5","","250"]} mt={5}>
+      <Box ml={["5", "", "250"]} mt={5}>
         <SimpleGrid fontWeight={"bold"} columns={[2, 3, 3, 5]} gap={4}>
           <Box
             _hover={{

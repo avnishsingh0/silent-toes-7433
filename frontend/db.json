@@ -3239,14 +3239,6 @@
       "colors": "Transparent",
       "quantity": 0,
       "id": 180
-    },
-    {
-      "name": "ALF",
-      "imageTsrc": "https://cdn.eyemyeye.com/shared/images/products/S12A2001/S12A2001-1.jpg",
-      "price": "10",
-      "productType": "sunglasses",
-      "gender": "",
-      "id": 181
     }
   ],
   "Men": [
