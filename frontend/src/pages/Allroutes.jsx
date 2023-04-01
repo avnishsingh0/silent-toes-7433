@@ -42,7 +42,7 @@ const Allroutes = () => {
       />
       <Route path="/payment" element={<Payment />} />
       <Route path="/orders" element={<Orders />} />
-      <Route path="/shipping" element={<Shipping />} />
+      <Route path="/shiping" element={<Shipping />} />
       <Route path="/confirm" element={<Confirm />} />
       <Route path="/orderhistory" element={<OrderHistory />} />
     </Routes>
