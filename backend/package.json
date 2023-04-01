@@ -1,24 +1,16 @@
 {
-  "name": "silent-toes-7433",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
    
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon backend/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/avnishsingh0/silent-toes-7433.git"
+    "server":"nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/avnishsingh0/silent-toes-7433/issues"
-  },
-  "homepage": "https://github.com/avnishsingh0/silent-toes-7433#readme",
   "dependencies": {
     "@chakra-ui/react": "^2.5.4",
     "@emotion/react": "^11.10.6",

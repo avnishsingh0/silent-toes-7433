@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
+import { addToCart } from "../../redux/CartPage/action";
+import { addToWishlist } from "../../redux/wishlist/wishlist.action";
+
 
 import {
     Box,
@@ -13,13 +16,16 @@ import {
     Text,
     Flex
   } from "@chakra-ui/react";
+import { useDispatch, useSelector } from "react-redux";
 const ProductDetails = () => {
+  const { cart } = useSelector((state) => state.CartReducer);
     const { id } = useParams();
   const [data, setData] = useState({});
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const fetchSingleProduct = () => {
-    axios(`https://harlequin-fawn-tutu.cyclic.app/product/${id}`)
+    axios(`https://busy-blue-chick-tie.cyclic.app/product/${id}`)
       .then((res) => setData(res.data.product))
       .catch((err) => console.log(err));
   };
@@ -27,6 +33,29 @@ const ProductDetails = () => {
     fetchSingleProduct();
   }, [id]);
   console.log(data)
+
+
+  const handleAddToCart = () => {
+    const existingItem = cart.findIndex((item) => item._id === data._id);
+    if (existingItem === -1) {
+      data.quantity = 1;
+      dispatch(addToCart(data));
+      console.log(data);
+      setTimeout(() => {
+        navigate("/cartpage");
+      }, 1000);
+    } else {
+      alert("Product Already Add in Cart");
+    }
+  };
+
+  const handleAddToWishlist = () => {
+    dispatch(addToWishlist(data));
+    setTimeout(() => {
+      navigate("/wishlist");
+    }, 1000);
+  };
+  
   return (
     <>
          <Grid
@@ -97,7 +126,7 @@ const ProductDetails = () => {
             w="90%"
             color="white"
             bgColor="#00bac6"
-            // onClick={handleAddToCart}
+            onClick={handleAddToCart}
           >
             <Flex flexWrap="wrap" justifyContent="center">
               <Text textAlign="center">BUY 1 GET 1 WITH GOLD MEMBERSHIP</Text>
@@ -113,7 +142,7 @@ const ProductDetails = () => {
             w="90%"
             color="white"
             bgColor="#00bac6"
-            // onClick={handleAddToWishlist}
+             onClick={handleAddToWishlist}
             fontSize="18px"
           >
             Add to Wishlist

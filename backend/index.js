@@ -1,28 +1,44 @@
-const express = require("express");
-const { connection } = require("./configs/db");
-require("dotenv").config();
+const express= require("express")
+const {connection}= require("./configs/db")
+const { productRouter } = require("./routes/product.routes")
+const {userRouter}=require('./routes/user.routes')
+const { cartRouter } = require("./routes/cart.routes");
 const cors = require("cors");
+const { kidstRouter } = require("./routes/kids.routes");
+const { menWomenRouter } = require("./routes/menWomen.routes");
+const { menRouter } = require("./routes/men.routes");
+const { womenRouter } = require("./routes/women.routes");
+const app= express()
+require("dotenv").config();
+app.use(express.json())
 
-const app = express();
 app.use(
   cors({
     origin: "*",
   })
 );
 
-app.use(express.json());
-
 app.get("/", (req, res) => {
   res.send("Welcome Home Page");
 });
 
-app.listen(process.env.port, async () => {
+app.use("/cart", cartRouter);
+app.use("/kids",kidstRouter);
+app.use("/menWomen",menWomenRouter);
+app.use("/men",menRouter);
+app.use("/product", productRouter);
+app.use('/users',userRouter);
+app.use("/women",womenRouter);
+
+
+app.listen(process.env.port,async()=>{
     try {
-      await connection;
-      console.log("Connected to the DB");
-    } catch (err) {
-      console.log("Trouble connecting to the DB");
-      console.log(err);
+        await connection
+        console.log("connect to db")
+    } catch (error) {
+        console.log("can't connected")
+        console.log(error);
     }
-    console.log(`Running at ${process.env.port} Port`);
-  });
+    console.log(`Server is running port ${process.env.port}`)
+    
+})

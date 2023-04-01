@@ -17,8 +17,8 @@ import { FiPhoneCall } from "react-icons/fi";
 import { CiHeart } from "react-icons/ci";
 import { CgShoppingCart } from "react-icons/cg";
 import { TriangleDownIcon } from "@chakra-ui/icons";
-// import Login from "../../Pages/Login/Login";
-// import Signup from "../../Pages/Signup/Signup";
+import Login from "../../pages/Login/Login";
+import Signup from "../../pages/Signup/Signup";
 import { NavbarDetail1 } from "./NavbarDetail";
 import { Link, Navigate } from "react-router-dom";
 import { useContext } from "react";
@@ -44,7 +44,7 @@ export const NavbarCard1 = () => {
 };
 
 export const NavbarCard2 = () => {
-//   const { isAuth, setisAuth, Authdata } = useContext(AuthContext);
+  // const { isAuth, setisAuth, Authdata } = useContext(AuthContext);
   const navigate = useNavigate();
 
   return (
@@ -124,8 +124,8 @@ export const NavbarCard2 = () => {
               </Popover>
             ) : (
               <Box display={"flex"}>
-                {/* <Login /> */}
-                {/* <Signup /> */}
+                <Login />
+                <Signup />
               </Box>
             )}
             <Button

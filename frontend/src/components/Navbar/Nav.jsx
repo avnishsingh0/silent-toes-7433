@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-// import Login from "../../Pages/Login/Login";
-// import Signup from "../../Pages/Signup/Signup";
+import Login from "../../pages/Login/Login";
+import Signup from "../../pages/Signup/Signup";
 // import { AuthContext } from "../../ContextApi/AuthContext";
 import { Link, Navigate } from "react-router-dom";
 import { ChevronDownIcon } from "@chakra-ui/icons";
@@ -32,7 +32,7 @@ import { useNavigate } from "react-router-dom";
 function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const firstField = React.useRef();
-//   const { isAuth, setisAuth, Authdata } = useContext(AuthContext);
+  // const { isAuth, setisAuth, Authdata } = useContext(AuthContext);
   const navigate = useNavigate();
 
   return (
@@ -157,7 +157,7 @@ function Nav() {
                         rounded="lg"
                         _hover={{ bg: "blue.200" }}
                       >
-                        {/* <Login /> */}
+                        <Login />
                       </Box>
                       <Box
                         bg="blue.500"
@@ -165,7 +165,7 @@ function Nav() {
                         rounded="lg"
                         _hover={{ bg: "blue.200" }}
                       >
-                        {/* <Signup /> */}
+                        <Signup />
                       </Box>
                     </div>
                   </div>

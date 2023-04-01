@@ -45,7 +45,7 @@ const Products = () => {
     setIsLoading(true);
     try {
       const response = await fetch(
-        `https://harlequin-fawn-tutu.cyclic.app/product?sort=${sort}&productRefLink=${productRef}&productType=${types}&gender=${gender}&page=${page}`
+        `https://busy-blue-chick-tie.cyclic.app/product?sort=${sort}&productRefLink=${productRef}&productType=${types}&gender=${gender}&page=${page}`
       );
       const postData = await response.json();
       setProducts(postData);

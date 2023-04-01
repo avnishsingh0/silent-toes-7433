@@ -14,9 +14,9 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { NavbarDetail2 } from "./NavbarDetail";
-// import Login from "../../Pages/Login/Login";
-// import Signup from "../../Pages/Signup/Signup";
-//import { Link } from "react-scroll";
+import Login from "../../Pages/Login/Login";
+import Signup from "../../Pages/Signup/Signup";
+import { Link } from "react-scroll";
 
 function Menus() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -73,6 +73,7 @@ function Menus() {
                   fontSize="16px"
                   fontWeight="500"
                   _hover={{ textDecoration: "underline" }}
+                  onClick="window.location.href=OrderHistory/OrderHistory"
                 >
                   Track Order
                 </Text>
