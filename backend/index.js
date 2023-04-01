@@ -12,6 +12,7 @@ app.use(
     origin: "*",
   })
 );
+
 app.get("/", (req, res) => {
   res.send("Welcome Home Page");
 });
