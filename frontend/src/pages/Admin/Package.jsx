@@ -23,7 +23,7 @@ const Package = () => {
 
   function saveData() {
     let data = { name, imageTsrc, price, productType, gender };
-    fetch("http://localhost:4500/allproducts", {
+    fetch("http://localhost:8080/product", {
       method: "POST",
       headers: {
         Accept: "application/json",
