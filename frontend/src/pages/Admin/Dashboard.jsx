@@ -19,7 +19,7 @@ const Blog = () => {
   }, []);
 
   function getAllProduct() {
-    fetch("http://localhost:4500/allproducts").then((result) => {
+    fetch("https://good-cyan-giraffe-wig.cyclic.app/product").then((result) => {
       result.json().then((res) => {
         console.log("allproducts", res.length);
         setAllProducts(res.length);
@@ -28,7 +28,7 @@ const Blog = () => {
   }
 
   function getMen() {
-    fetch("http://localhost:4500/Men").then((result) => {
+    fetch("https://good-cyan-giraffe-wig.cyclic.app/Men").then((result) => {
       result.json().then((res) => {
         console.log("Men", res.length);
         setMens(res.length);
@@ -37,7 +37,7 @@ const Blog = () => {
   }
 
   function getWomen() {
-    fetch("http://localhost:4500/Women").then((result) => {
+    fetch("https://good-cyan-giraffe-wig.cyclic.app/Women").then((result) => {
       result.json().then((res) => {
         console.log("Women", res.length);
         setWomen(res.length);
@@ -46,7 +46,7 @@ const Blog = () => {
   }
 
   function getKids() {
-    fetch("http://localhost:4500/Kids").then((result) => {
+    fetch("https://good-cyan-giraffe-wig.cyclic.app/Kids").then((result) => {
       result.json().then((res) => {
         console.log("Kids", res.length);
         setKids(res.length);
@@ -55,7 +55,7 @@ const Blog = () => {
   }
 
   function getBoth() {
-    fetch("http://localhost:4500/Both").then((result) => {
+    fetch("https://good-cyan-giraffe-wig.cyclic.app/menWomen").then((result) => {
       result.json().then((res) => {
         console.log("Both", res.length);
         setBoth(res.length);
