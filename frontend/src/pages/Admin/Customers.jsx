@@ -21,7 +21,7 @@ const Customers = () => {
   }, []);
 
   function getJewlery() {
-    fetch("http://localhost:4500/allproducts").then((result) => {
+    fetch("https://good-cyan-giraffe-wig.cyclic.app/product").then((result) => {
       result.json().then((resp) => {
         setCart(resp);
       });
@@ -29,7 +29,7 @@ const Customers = () => {
   }
 
   function deleteItem(id) {
-    fetch(`http://localhost:4500/allproducts/${id}`, {
+    fetch(`https://good-cyan-giraffe-wig.cyclic.app/product/${id}`, {
       method: "DELETE",
     }).then((result) => {
       result.json().then((resp) => {

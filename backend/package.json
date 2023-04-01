@@ -1,23 +1,15 @@
 {
-  "name": "silent-toes-7433",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/avnishsingh0/silent-toes-7433.git"
+    "server":"nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/avnishsingh0/silent-toes-7433/issues"
-  },
-  "homepage": "https://github.com/avnishsingh0/silent-toes-7433#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",

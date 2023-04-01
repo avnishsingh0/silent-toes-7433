@@ -19,35 +19,35 @@ export function Piechart() {
     let arr = [];
     let obj = {};
 
-    let allproducts = await axios.get("http://localhost:4500/allproducts");
+    let allproducts = await axios.get("https://good-cyan-giraffe-wig.cyclic.app/product");
     allproducts = allproducts.data.length;
     obj = {};
     obj.name = "Allproducts";
     obj.value = allproducts;
     arr.push(obj);
 
-    let Men = await axios.get("http://localhost:4500/Men");
+    let Men = await axios.get("https://good-cyan-giraffe-wig.cyclic.app/Men");
     Men = Men.data.length;
     obj = {};
     obj.name = "Men";
     obj.value = Men;
     arr.push(obj);
 
-    let Women = await axios.get("http://localhost:4500/Women");
+    let Women = await axios.get("https://good-cyan-giraffe-wig.cyclic.app/Women");
     Women = Women.data.length;
     obj = {};
     obj.name = "Women";
     obj.value = Women;
     arr.push(obj);
 
-    let Kids = await axios.get("http://localhost:4500/Kids");
+    let Kids = await axios.get("https://good-cyan-giraffe-wig.cyclic.app/Kids");
     Kids = Kids.data.length;
     obj = {};
     obj.name = "Kids";
     obj.value = Kids;
     arr.push(obj);
 
-    let Both = await axios.get("http://localhost:4500/Both");
+    let Both = await axios.get("https://good-cyan-giraffe-wig.cyclic.app/menWomen");
     Both = Both.data.length;
     obj = {};
     obj.name = "Men/Women";
@@ -100,31 +100,31 @@ export function LineChart1() {
   async function getData() {
     let arr = [{ name: "Price", uv: 0 }];
 
-    let products = await axios.get("http://localhost:4500/allproducts");
+    let products = await axios.get("https://good-cyan-giraffe-wig.cyclic.app/product");
     products = products.data;
     products.map((el) => {
       return arr.push({ uv: parseInt(el.price) });
     });
 
-    let men = await axios.get("http://localhost:4500/Men");
+    let men = await axios.get("https://good-cyan-giraffe-wig.cyclic.app/Men");
     men = men.data;
     men.map((el) => {
       return arr.push({ uv: parseInt(el.price) });
     });
 
-    let Women = await axios.get("http://localhost:4500/Women");
+    let Women = await axios.get("https://good-cyan-giraffe-wig.cyclic.app/Women");
     Women = Women.data;
     Women.map((el) => {
       return arr.push({ uv: parseInt(el.price) });
     });
 
-    let Kids = await axios.get("http://localhost:4500/Kids");
+    let Kids = await axios.get("https://good-cyan-giraffe-wig.cyclic.app/Kids");
     Kids = Kids.data;
     Kids.map((el) => {
       return arr.push({ uv: parseInt(el.price) });
     });
 
-    let Both = await axios.get("http://localhost:4500/Both");
+    let Both = await axios.get("https://good-cyan-giraffe-wig.cyclic.app/menWomen");
     Both = Both.data;
     Both.map((el) => {
       return arr.push({ uv: parseInt(el.price) });
