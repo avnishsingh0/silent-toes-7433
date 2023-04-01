@@ -12,6 +12,8 @@ import Customers from "./Admin/Customers";
 import Order from "./Admin/Order";
 import Products from "./Products/Products";
 import Blog from "./Admin/Dashboard";
+import CartPage from "./Cart/index";
+import Wishlist from "./Wishlist/Wishlist";
 const Allroutes = () => {
   return (
     <Routes>
@@ -22,6 +24,22 @@ const Allroutes = () => {
       <Route path="/adminpanel/package" element={<Multistep />} />
       <Route path="/adminpanel/customers" element={<Customers />} />
       <Route path="/adminpanel/order" element={<Order />} />
+      <Route
+        path="/cartpage"
+        element={
+          
+            <CartPage />
+          
+        }
+      />
+      <Route
+        path="/wishlist"
+        element={
+          
+            <Wishlist/>
+          
+        }
+      />
       <Route path="/payment" element={<Payment />} />
       <Route path="/orders" element={<Orders />} />
       <Route path="/shipping" element={<Shipping />} />
