@@ -370,7 +370,7 @@ const CartPage = () => {
               fontSize={"16px"}
               height="56px"
               fontWeight={"700"}
-              onClick={() => navigate("/shiping")}
+              onClick={() => navigate("/shipping")}
             >
               Proceed To Checkout
             </Button>

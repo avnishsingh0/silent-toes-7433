@@ -87,61 +87,73 @@ export const HomeDetails2 = [
     name: "Blend Edit",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/blend.jpg",
     caption: "Slide 1",
+    id:1
   },
   {
     name: "Air Clip On",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/clipon.jpg",
     caption: "Slide 2",
+    id:2
   },
   {
     name: "Air Flex",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/airflex.jpg",
     caption: "Slide 3",
+    id:3
   },
   {
     name: "Retro Aviator",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/aviator.jpg",
     caption: "Slide 4",
+    id:4
   },
   {
     name: "Round",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/image179.png",
     caption: "Slide 1",
+    id:5
   },
   {
     name: "Cat-Eye",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg",
     caption: "Slide 1",
+    id:6
   },
   {
     name: "Clubmaster",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg",
     caption: "Slide 1",
+    id:7
   },
   {
     name: "Transparent",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg",
     caption: "Slide 1",
+    id:8
   },
   {
     name: "Blend Edit",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/blend.jpg",
     caption: "Slide 1",
+    id:9
   },
   {
     name: "Air Clip On",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/clipon.jpg",
     caption: "Slide 1",
+    id:10
   },
   {
     name: "Air Flex",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/airflex.jpg",
     caption: "Slide 1",
+    id:11
   },
   {
     name: "Retro Aviator",
     img: "https://static1.lenskart.com/media/desktop/img/Sep21/aviator.jpg",
     caption: "Slide 1",
+    id:12
   },
 ];
 
@@ -160,18 +172,22 @@ export const HomeDetails4 = [
   {
     img: "https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/call1800.jpg",
     caption: "Slide 4",
+    id:1
   },
   {
     img: "https://static1.lenskart.com/media/desktop/img/Nov21/whatsapp.jpg",
     caption: "Slide 4",
+    id:2
   },
   {
     img: "https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/hto.jpg",
     caption: "Slide 4",
+    id:3
   },
   {
     img: "https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/stores.jpg",
     caption: "Slide 4",
+    id:4
   },
 ];
 
@@ -179,26 +195,32 @@ export const HomeDetails5 = [
   {
     img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13046-c5-eyeglasses_G_9427.jpg",
     caption: "Slide 4",
+    id:1
   },
   {
     img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/sand-dune-full-rim-hustlr-eyeglasses_csvfile-1672134506028-g_6941_12_13_22.jpg",
     caption: "Slide 4",
+    id:2
   },
   {
     img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/e/lenskart-air-la-e13032-c1-eyeglasses_g_1999.jpg",
     caption: "Slide 4",
+    id:3
   },
   {
     img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13046-c5-eyeglasses_G_9427.jpg",
     caption: "Slide 4",
+    id:4
   },
   {
     img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/sand-dune-full-rim-hustlr-eyeglasses_csvfile-1672134506028-g_6941_12_13_22.jpg",
     caption: "Slide 4",
+    id:5
   },
   {
     img: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/e/lenskart-air-la-e13032-c1-eyeglasses_g_1999.jpg",
     caption: "Slide 4",
+    id:6
   },
 ];
 

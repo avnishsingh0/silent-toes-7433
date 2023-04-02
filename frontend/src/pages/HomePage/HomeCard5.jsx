@@ -49,7 +49,7 @@ const HomeCard5 = ({ type, heading }) => {
           }}
         >
           {type.map((i) => (
-            <Box key={i.caption}>
+            <Box key={i.id}>
               <SwiperSlide>
                 <Link to={i.linked}>
                   <Square m="auto">

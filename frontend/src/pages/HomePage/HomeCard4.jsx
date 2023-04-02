@@ -176,7 +176,7 @@ export const HomeCard4b = ({ type, heading }) => {
         gap={6}
       >
         {type.map((i) => (
-          <Box key={i}>
+          <Box key={i.id}>
             <Image src={`${i.img}`} alt={i.caption} />
           </Box>
         ))}
