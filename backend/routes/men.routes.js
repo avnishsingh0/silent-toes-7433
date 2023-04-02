@@ -50,13 +50,10 @@ menRouter.get("/", async (req, res) => {
       .skip(parseInt(req.query.page) * 12)
       .limit(12);
     res.send(men);
-
   } catch (error) {
     res.status(500).send(error);
   }
 });
-
-
 
 menRouter.get("/:id", async (req, res) => {
   try {
@@ -79,9 +76,7 @@ menRouter.post("/", async (req, res) => {
   try {
     const newMen = new MenModel(payload);
     await newMen.save();
-    res
-      .status(201)
-      .json({ newMen, message: "New Men successfully Added" });
+    res.status(201).json({ newMen, message: "New Men successfully Added" });
   } catch (err) {
     console.log("err :", err);
     res.status(400).send({ msg: err });
@@ -127,7 +122,109 @@ menRouter.delete("/:id", async (req, res) => {
   }
 });
 
-
 module.exports = {
   menRouter,
 };
+
+
+
+
+
+
+
+
+
+
+// productPageRouter.get("/search", async (req, res) => {
+//   const { page, limit, sort } = req.query;
+//   const skip = (page - 1) * limit;
+
+//   let obj = {};
+//   let searchText = "";
+
+//   if (req.query.search) {
+//     searchText = req.query.search;
+//     obj.name = { $regex: req.query.search, $options: "i" };
+//   }
+
+//   console.log("This is query:-", req.query);
+//   for (let x in req.query) {
+//     if (x !== "page" && x !== "limit" && x !== "sort") {
+//       obj[x] = req.query[x];
+//     }
+//   }
+
+//   console.log(sort);
+
+//   let sorting = {};
+
+//   if (sort === "asc") {
+//     sorting = { final_price: 1 };
+//   } else if (sort === "desc") {
+//     sorting = { final_price: -1 };
+//   }
+
+//   console.log(obj);
+
+//   try {
+//     const data = await ProductPageModel.find(obj)
+//       .skip(skip)
+//       .limit(limit)
+//       .sort(sorting);
+//     res.status(200).send({
+//       data,
+//       page,
+//       pages: Math.ceil(count / limit),
+//       searchText,
+//     });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).send({ msg: "Some error" });
+//   }
+//   F;
+// });
+
+// productPageRouter.get("/search", async (req, res) => {
+//   const { page = 1, limit = 12, sort } = req.query;
+//   const skip = (page - 1) * limit;
+
+//   let obj = {};
+//   let searchText = "";
+
+//   if (req.query.search) {
+//     searchText = req.query.search;
+//     obj.name = { $regex: req.query.search, $options: "i" };
+//   }
+
+//   for (let x in req.query) {
+//     if (x !== "page" && x !== "limit" && x !== "sort" && x !== "search") {
+//       obj[x] = req.query[x];
+//     }
+//   }
+
+//   let sorting = {};
+
+//   if (sort === "asc") {
+//     sorting = { final_price: 1 };
+//   } else if (sort === "desc") {
+//     sorting = { final_price: -1 };
+//   }
+
+//   try {
+//     const count = await ProductPageModel.countDocuments(obj);
+//     const data = await ProductPageModel.find(obj)
+//       .skip(skip)
+//       .limit(parseInt(limit))
+//       .sort(sorting);
+
+//     res.status(200).send({
+//       data,
+//       page,
+//       pages: Math.ceil(count / limit),
+//       searchText,
+//     });
+//   } catch (error) {
+//     console.log(error);
+//     res.status(400).send({ msg: "Some error" });
+//   }
+// });

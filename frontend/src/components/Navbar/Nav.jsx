@@ -28,6 +28,7 @@ import {
   Text
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import logoImg from "./EyeCare.png"
 
 function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -43,9 +44,9 @@ function Nav() {
       p={2.5}
     >
       <HStack m="auto">
-        <Box w="12%"> 
+        <Box > 
           <Link to="/">
-            <Image src="http://drive.google.com/uc?export=view&id=17S3T84GN9LgKILJf262tSw-BneNJFr7m" alt="logo" w="65%" h="50px"/>
+            <Image src={logoImg} alt="logo" w="100px" h="60px"/>
           </Link>
         </Box>
         <Box w="100%">
@@ -132,7 +133,7 @@ function Nav() {
                       GET GOLD MEMBERSHIP
                     </Button>
                   </div>
-                ) : (
+                {/* ) : ( */}
                   <div
                     style={{
                       padding: "5%",
@@ -169,7 +170,7 @@ function Nav() {
                       </Box>
                     </div>
                   </div>
-                )}
+                {/* )} */}
               </DrawerHeader>
               <DrawerBody borderBottomWidth="1px" bg="whiteAlpha.900">
                 <Box display="flex" flexDirection="column" fontSize="16px">
@@ -228,7 +229,7 @@ function Nav() {
                       >
                         Men
                       </MenuButton>
-                      <Link to="/newproducts">
+                      <Link to="/product">
                         <MenuList>
                           <MenuItem>EYEGLASSES</MenuItem>
                           <MenuItem>COMPUTER GLASSES</MenuItem>
@@ -259,7 +260,7 @@ function Nav() {
                       >
                         Women
                       </MenuButton>
-                      <Link to="/newproducts">
+                      <Link to="/product">
                         <MenuList>
                           <MenuItem>EYEGLASSES</MenuItem>
                           <MenuItem>COMPUTER GLASSES</MenuItem>
@@ -290,7 +291,7 @@ function Nav() {
                       >
                         Kids
                       </MenuButton>
-                      <Link to="/newproducts">
+                      <Link to="/product">
                         <MenuList>
                           <MenuItem>EYEGLASSES</MenuItem>
                           <MenuItem>COMPUTER GLASSES</MenuItem>
@@ -444,7 +445,7 @@ function Nav() {
                     Sign Out
                   </Button>
                 </DrawerFooter>
-              )}
+              {/* )} */}
             </DrawerContent>
           </Drawer>
         </Box>

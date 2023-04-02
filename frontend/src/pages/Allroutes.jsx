@@ -14,24 +14,29 @@ import Products from "./Products/Products";
 import Blog from "./Admin/Dashboard";
 import CartPage from "./Cart/index";
 import Wishlist from "./Wishlist/Wishlist";
+import { Privateroutes } from "../ContextApi/Privateroute";
 const Allroutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<h1>ssss</h1>} />
       <Route path="/product" element={<Products />} />
       <Route path="/product/:id" element={<ProductDetails />} />
+
       <Route path="/adminpanel" element={<Blog />} />
       <Route path="/adminpanel/package" element={<Multistep />} />
       <Route path="/adminpanel/customers" element={<Customers />} />
       <Route path="/adminpanel/order" element={<Order />} />
+      
       <Route
         path="/cartpage"
         element={
-          
+          // <Privateroutes>
             <CartPage />
-          
+            // </Privateroutes>
         }
       />
+      
+      
       <Route
         path="/wishlist"
         element={

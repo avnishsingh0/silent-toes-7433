@@ -37,7 +37,7 @@ const HomeCard2 = ({ type, src }) => {
         <Box
           w={{ sm: "100%", md: "100%", lg: "100%", xl: "75%", base: "100%" }}
         >
-          <Slider type={type} />
+          {/* <Slider type={type} /> */}
         </Box>
       </Flex>
     </Box>

@@ -211,7 +211,7 @@ function NavbarCard5() {
           w="100%"
           p="5"
         >
-          <Link to="/newproducts">
+          <Link to="/product">
             <Box>
               <Grid gridTemplateColumns="repeat(5, 1fr)" w="100%">
                 <Flex
@@ -317,7 +317,7 @@ function NavbarCard5() {
           w="100%"
           p="2"
         >
-          <Link to="/newproducts">
+          <Link to="/product">
             <Box>
               <Grid
                 gridTemplateColumns="repeat(3, 1fr)"
@@ -498,7 +498,7 @@ function NavbarCard5() {
           w="100%"
           p="5"
         >
-          <Link to="/newproducts">
+          <Link to="/product">
             <Box>
               <Grid gridTemplateColumns="repeat(6, 1fr)">
                 <Flex direction="column" justifyContent="space-evenly">
