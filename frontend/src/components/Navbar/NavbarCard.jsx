@@ -52,7 +52,7 @@ export const NavbarCard2 = () => {
       <HStack m="auto">
         <Box w="15%">
           <Link to="/">
-            <Image src="http://drive.google.com/uc?export=view&id=17S3T84GN9LgKILJf262tSw-BneNJFr7m" alt="logo" w="75%" h="120px" />
+            <Image src="http://drive.google.com/uc?export=view&id=17S3T84GN9LgKILJf262tSw-BneNJFr7m" alt="logo" w="65%" h="50px" />
           </Link>
         </Box>
         <HStack w="85%" m="auto">

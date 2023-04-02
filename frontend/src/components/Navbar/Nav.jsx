@@ -45,7 +45,7 @@ function Nav() {
       <HStack m="auto">
         <Box w="12%"> 
           <Link to="/">
-            <Image src="http://drive.google.com/uc?export=view&id=17S3T84GN9LgKILJf262tSw-BneNJFr7m" alt="logo" w="75%" />
+            <Image src="http://drive.google.com/uc?export=view&id=17S3T84GN9LgKILJf262tSw-BneNJFr7m" alt="logo" w="65%" h="50px"/>
           </Link>
         </Box>
         <Box w="100%">
