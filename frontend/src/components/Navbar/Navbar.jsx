@@ -5,7 +5,7 @@ import Nav from "./Nav";
 
 const Navbar = () => {
   return (
-    <Box overflow="hidden" bg="white">
+    <Box overflow="hidden" bg="white" > 
       <Box display={{ base: "none", xl: "inherit" }} color="blackAlpha.800">
         <NavbarCard1 />
         <NavbarCard2 />

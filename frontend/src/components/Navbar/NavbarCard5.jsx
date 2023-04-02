@@ -37,7 +37,7 @@ function NavbarCard5() {
           w="100%"
           p="5"
         >
-          <Link to="/newproducts">
+          <Link to="/product">
             <Box>
               <Grid gridTemplateColumns="repeat(5, 1fr)" w="100%">
                 <Flex direction="column" justifyContent="space-evenly" mt="20">
@@ -48,6 +48,7 @@ function NavbarCard5() {
                       alt="men"
                       size="md"
                     />
+                    
                     <Box
                       fontSize="lg"
                       fontWeight="bold"
