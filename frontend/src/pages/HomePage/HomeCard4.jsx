@@ -176,7 +176,7 @@ export const HomeCard4b = ({ type, heading }) => {
         gap={6}
       >
         {type.map((i) => (
-          <Box key={i.id}>
+          <Box key={i.img}>
             <Image src={`${i.img}`} alt={i.caption} />
           </Box>
         ))}
@@ -210,7 +210,7 @@ export const HomeCard4c = ({ type, heading }) => {
           w="100%"
         >
           {type.map((i) => (
-            <Box key={i}>
+            <Box key={i.img}>
               <ReactPlayer url={i.img} width="100%" height="300px" />
             </Box>
           ))}

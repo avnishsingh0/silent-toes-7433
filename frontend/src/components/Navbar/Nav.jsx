@@ -229,7 +229,7 @@ function Nav() {
                       >
                         Men
                       </MenuButton>
-                      <Link to="/newproducts">
+                      <Link to="/product">
                         <MenuList>
                           <MenuItem>EYEGLASSES</MenuItem>
                           <MenuItem>COMPUTER GLASSES</MenuItem>
@@ -260,7 +260,7 @@ function Nav() {
                       >
                         Women
                       </MenuButton>
-                      <Link to="/newproducts">
+                      <Link to="/product">
                         <MenuList>
                           <MenuItem>EYEGLASSES</MenuItem>
                           <MenuItem>COMPUTER GLASSES</MenuItem>
@@ -291,7 +291,7 @@ function Nav() {
                       >
                         Kids
                       </MenuButton>
-                      <Link to="/newproducts">
+                      <Link to="/product">
                         <MenuList>
                           <MenuItem>EYEGLASSES</MenuItem>
                           <MenuItem>COMPUTER GLASSES</MenuItem>

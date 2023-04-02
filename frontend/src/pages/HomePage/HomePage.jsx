@@ -115,7 +115,7 @@ const Home = () => {
         src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/VC-Banner.jpg"
       />
       <br />
-        {/* <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" /> */}
+        <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" />
       <br />
       {/* <HomeCard5 type={HomeDetails6} heading="SUNGLASSES" /> */}
       <Image
@@ -176,7 +176,7 @@ const Home = () => {
         height={["50px", "70px", "200px"]}
       />
       <br />
-      {/* <HomeCard4c type={HomeDetails12} heading="MEET OUR HAPPY CUSTOMERS" /> */}
+      <HomeCard4c type={HomeDetails12} heading="MEET OUR HAPPY CUSTOMERS" />
       <HomeCard6
         type={HomeDetails9}
         heading="WITH ZERO POWER COMPUTER BLU LENSES"

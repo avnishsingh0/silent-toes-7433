@@ -125,9 +125,7 @@ function Shipping() {
   return (
     <>
       {/* <Navbar /> */}
-      <br />
-      <br />
-      <Flex m="auto" justifyContent="space-evenly">
+      <Flex m="auto" justifyContent="space-evenly" mt={["","","","170px"]}>
         <Box id="addres" w="65%">
           <Text
             id="ships"
