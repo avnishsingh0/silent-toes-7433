@@ -17,6 +17,7 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
 const Slider = ({ type }) => {
+  console.log("type",type)
   return (
     <Swiper
       color="black"
@@ -50,8 +51,8 @@ const Slider = ({ type }) => {
         },
       }}
     >
-      {type.map((i) => (
-        <Box key={i.name}>
+      {type.map((i, index) => (
+        <Box key={index}>
           <SwiperSlide>
             <Link to={i.linked}>
               <Square m="auto">

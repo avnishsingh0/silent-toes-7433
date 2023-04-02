@@ -28,6 +28,7 @@ import {
   Text
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import logoImg from "./EyeCare.png"
 
 function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -43,9 +44,9 @@ function Nav() {
       p={2.5}
     >
       <HStack m="auto">
-        <Box w="12%"> 
+        <Box > 
           <Link to="/">
-            <Image src="http://drive.google.com/uc?export=view&id=17S3T84GN9LgKILJf262tSw-BneNJFr7m" alt="logo" w="65%" h="50px"/>
+            <Image src={logoImg} alt="logo" w="100px" h="60px"/>
           </Link>
         </Box>
         <Box w="100%">

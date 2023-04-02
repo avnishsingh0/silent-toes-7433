@@ -25,6 +25,7 @@ import { useContext } from "react";
 // import { AuthContext } from "../../ContextApi/AuthContext";
 import NavbarCard5 from "./NavbarCard5";
 import { useNavigate } from "react-router-dom";
+import logoImg from "./EyeCare.png"
 
 export const NavbarCard1 = () => {
   return (
@@ -49,10 +50,10 @@ export const NavbarCard2 = () => {
 
   return (
     <Box cursor="pointer">
-      <HStack m="auto">
-        <Box w="15%">
+      <HStack m="auto" justifyContent={"space-between"}>
+        <Box  ml={35}>
           <Link to="/">
-            <Image src="http://drive.google.com/uc?export=view&id=17S3T84GN9LgKILJf262tSw-BneNJFr7m" alt="logo" w="65%" h="50px" />
+            <Image src={logoImg} alt="logo" w="120px" h="80px" />
           </Link>
         </Box>
         <HStack w="85%" m="auto">
@@ -127,7 +128,7 @@ export const NavbarCard2 = () => {
                 <Login />
                 <Signup />
               </Box>
-            )}
+            )
             <Button
               leftIcon={<CiHeart />}
               size="lg"
