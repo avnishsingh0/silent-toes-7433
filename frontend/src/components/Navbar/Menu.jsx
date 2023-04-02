@@ -14,8 +14,8 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { NavbarDetail2 } from "./NavbarDetail";
-import Login from "../../Pages/Login/Login";
-import Signup from "../../Pages/Signup/Signup";
+// import Login from "../../Pages/Login/Login";
+// import Signup from "../../Pages/Signup/Signup";
 import { Link } from "react-scroll";
 
 function Menus() {

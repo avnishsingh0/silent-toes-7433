@@ -47,12 +47,9 @@ const Line3 = () => {
 };
 const Home = () => {
   return (
-<<<<<<< HEAD
-    <Box>
-=======
     <Box mt={["40px","40px","40px","180px"]}>
+    {/* <Box > */}
       {/* <Navbar /> */}
->>>>>>> 5ecda743a2609a1e0cd8709f3a1bedeadc51d363
       <HomeCard type={HomeDetails} />
       <HomeCard1 type={HomeDetails1} />
        <Image
