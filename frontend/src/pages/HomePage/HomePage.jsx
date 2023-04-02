@@ -114,7 +114,7 @@ const Home = () => {
         src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/VC-Banner.jpg"
       />
       <br />
-        <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" />
+        {/* <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" /> */}
       <br />
       {/* <HomeCard5 type={HomeDetails6} heading="SUNGLASSES" /> */}
       <Image

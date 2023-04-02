@@ -19,7 +19,7 @@ const Order = () => {
   }, []);
 
   function getJewlery() {
-    fetch("https://caratlane-database.vercel.app/customerData").then(
+    fetch("https://good-cyan-giraffe-wig.cyclic.app/users").then(
       (result) => {
         result.json().then((resp) => {
           setCart(resp);
@@ -28,7 +28,7 @@ const Order = () => {
     );
   }
   function deleteItem(id) {
-    fetch(`https://caratlane-database.vercel.app/customerData/${id}`, {
+    fetch(`https://good-cyan-giraffe-wig.cyclic.app/users/${id}`, {
       method: "DELETE",
     }).then((result) => {
       result.json().then((resp) => {

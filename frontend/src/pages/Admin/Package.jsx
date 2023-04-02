@@ -23,7 +23,7 @@ const Package = () => {
 
   function saveData() {
     let data = { name, imageTsrc, price, productType, gender };
-    fetch("http://localhost:8080/product", {
+    fetch("https://good-cyan-giraffe-wig.cyclic.app/product", {
       method: "POST",
       headers: {
         Accept: "application/json",
