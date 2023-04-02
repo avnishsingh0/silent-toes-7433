@@ -36,6 +36,7 @@ const Products = () => {
         border="1px solid"
         borderColor="gray.300"
         _hover={{ border: "1.5px solid black" }}
+      
       >
         <Image m="7px auto" width="70px" src={src} />
         <Text mx="5px" textAlign="center" fontSize="15px" color="gray.500">
@@ -79,6 +80,7 @@ const Products = () => {
   return (
     <Box>
     <Navbar/>
+    <Box mt={["5rem","","","40px"]}>
       <Image
         src="https://static1.lenskart.com/media/desktop/img/Mar23/spring/home/PLP%20Camapaign%20-%20WEB_1.jpg"
         alt="img"
@@ -86,7 +88,7 @@ const Products = () => {
         m="auto"
       />
 
-      <Flex m="0" px="2%" gap="4" cursor="pointer" mt={["","","","40px"]}>
+      <Flex m="0" px="2%" gap="4" cursor="pointer" >
         <Hide breakpoint="(max-width: 1186px)">
           <Box w="17%" m={0}>
             <Box mb="20px">
@@ -569,6 +571,7 @@ const Products = () => {
           </Box>
         </Box>
       </Flex>
+      </Box>
 
       <Pagination current={page} onChange={(value) => setPage(value)} />
       <Footer/>

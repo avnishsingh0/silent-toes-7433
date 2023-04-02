@@ -5,12 +5,12 @@ import "react-slideshow-image/dist/styles.css";
 
 const HomeCard1 = ({ type }) => {
   return (
-    <Box cursor="pointer" p="-1">
+    <Box cursor="pointer" p="-1" zIndex={-100}>
       <Box>
         <Slide>
           {type.map((i) => (
-            <Box key={i.img}>
-              <Image src={`${i.img}`} alt={i.caption} w="100%" />
+            <Box key={i.img} >
+              <Image src={`${i.img}`}  alt={i.caption} w="100%" />
             </Box>
           ))}
         </Slide>
