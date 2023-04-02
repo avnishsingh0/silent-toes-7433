@@ -122,12 +122,12 @@ export const NavbarCard2 = () => {
                   </PopoverBody>
                 </PopoverContent>
               </Popover>
-            ) : (
+            {/* ) : ( */}
               <Box display={"flex"}>
                 <Login />
                 <Signup />
               </Box>
-            )}
+            {/* )} */}
             <Button
               leftIcon={<CiHeart />}
               size="lg"

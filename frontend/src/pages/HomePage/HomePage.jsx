@@ -23,6 +23,7 @@ import {
   HomeDetails12,
 } from "./HomeDetails";
 import { Image, Box } from "@chakra-ui/react";
+// import Navbar from "../../components/Footer/Navbar/Navbar";
 
 const Line4 = () => {
   return (
@@ -47,7 +48,6 @@ const Line3 = () => {
 const Home = () => {
   return (
     <Box>
-      {/* <Navbar /> */}
       <HomeCard type={HomeDetails} />
       <HomeCard1 type={HomeDetails1} />
       <Image

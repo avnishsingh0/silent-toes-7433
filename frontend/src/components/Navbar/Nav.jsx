@@ -132,7 +132,7 @@ function Nav() {
                       GET GOLD MEMBERSHIP
                     </Button>
                   </div>
-                ) : (
+                {/* ) : ( */}
                   <div
                     style={{
                       padding: "5%",
@@ -169,7 +169,7 @@ function Nav() {
                       </Box>
                     </div>
                   </div>
-                )}
+                {/* )} */}
               </DrawerHeader>
               <DrawerBody borderBottomWidth="1px" bg="whiteAlpha.900">
                 <Box display="flex" flexDirection="column" fontSize="16px">
@@ -444,7 +444,7 @@ function Nav() {
                     Sign Out
                   </Button>
                 </DrawerFooter>
-              )}
+              {/* )} */}
             </DrawerContent>
           </Drawer>
         </Box>
