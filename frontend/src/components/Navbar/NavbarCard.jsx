@@ -21,7 +21,7 @@ import Login from "../../pages/Login/Login";
 import Signup from "../../pages/Signup/Signup";
 import { NavbarDetail1 } from "./NavbarDetail";
 import { Link, Navigate } from "react-router-dom";
-import { useContext } from "react";
+// import { useContext } from "react";
 // import { AuthContext } from "../../ContextApi/AuthContext";
 import NavbarCard5 from "./NavbarCard5";
 import { useNavigate } from "react-router-dom";
@@ -123,16 +123,10 @@ export const NavbarCard2 = () => {
                   </PopoverBody>
                 </PopoverContent>
               </Popover>
-            {/* ) : ( */}
               <Box display={"flex"}>
                 <Login />
                 <Signup />
               </Box>
-<<<<<<< HEAD
-            {/* )} */}
-=======
-            )
->>>>>>> 5ecda743a2609a1e0cd8709f3a1bedeadc51d363
             <Button
               leftIcon={<CiHeart />}
               size="lg"
