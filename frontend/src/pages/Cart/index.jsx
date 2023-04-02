@@ -6,8 +6,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import CartEmpty from "./CartEmpty";
-// import Navbar from "../../Components/Navbar/Navbar";
-// import Footer from "../../Components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer";
 import {
   removeFromCart,
   decrement,
@@ -111,7 +111,7 @@ const CartPage = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar/>
       {cart.length > 0 ? (
         <Flex
           width={"90%"}
@@ -128,6 +128,7 @@ const CartPage = () => {
             xl: "row",
             "2xl": "row"
           }}
+          mt={["","","","200px"]}
         >
           <Flex
             flexDirection={"column"}
@@ -379,7 +380,7 @@ const CartPage = () => {
       ) : (
         <CartEmpty />
       )}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

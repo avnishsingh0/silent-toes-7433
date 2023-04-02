@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { Box, Button, Flex, Image, Input } from "@chakra-ui/react";
 // import { useNavigate } from "react-router-dom";
-// import Navbar from "../../Components/Navbar/Navbar";
-// import Footer from "../../Components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import "./pay.css";
 import { useSelector, useDispatch } from "react-redux";
 import { cartReset } from "../../redux/CartPage/action"
@@ -97,10 +97,8 @@ const Payment = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
-      <Box>
-        <br />
-        <br />
+      <Navbar />
+      <Box mt={["","","","200px"]}>
         <div className="card">
           <div style={{ width: "70%", margin: "auto" }}>
             <Box
@@ -300,7 +298,7 @@ const Payment = () => {
       <br />
       <br />
       <br />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

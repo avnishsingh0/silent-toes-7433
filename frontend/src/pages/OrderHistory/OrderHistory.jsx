@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import { Box, Text, Stack, Heading, Flex, Image, Grid } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-// import Navbar from "../../Components/Navbar/Navbar";
-// import Footer from "../../Components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 const OrderHistory = () => {
   const orders = useSelector((store) => store.orderManager.order);
@@ -14,10 +14,10 @@ const OrderHistory = () => {
 
   return (
     <Box>
-      {/* <Navbar /> */}
+      <Navbar />
       <br />
 
-      <Box minHeight="635" p={8} w="70%" m="auto">
+      <Box minHeight="635" p={8} w="70%" m="auto" mt={["","","","150px"]}>
         <Heading
           fontSize="25px"
           mt="1%"
@@ -109,7 +109,7 @@ const OrderHistory = () => {
       </Box>
       <br />
       <br />
-      {/* <Footer /> */}
+      <Footer />
     </Box>
   );
 };

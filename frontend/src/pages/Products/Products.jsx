@@ -15,6 +15,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Loading from "./Loading";
 import Pagination from "./Pagination";
+import Navbar from "../../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer"
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -76,6 +78,7 @@ const Products = () => {
 
   return (
     <Box>
+    <Navbar/>
       <Image
         src="https://static1.lenskart.com/media/desktop/img/Mar23/spring/home/PLP%20Camapaign%20-%20WEB_1.jpg"
         alt="img"
@@ -83,7 +86,7 @@ const Products = () => {
         m="auto"
       />
 
-      <Flex m="0" px="2%" gap="4" cursor="pointer">
+      <Flex m="0" px="2%" gap="4" cursor="pointer" mt={["","","","40px"]}>
         <Hide breakpoint="(max-width: 1186px)">
           <Box w="17%" m={0}>
             <Box mb="20px">
@@ -568,6 +571,7 @@ const Products = () => {
       </Flex>
 
       <Pagination current={page} onChange={(value) => setPage(value)} />
+      <Footer/>
     </Box>
   );
 };

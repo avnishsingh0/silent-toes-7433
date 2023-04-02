@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import Navbar from "../../Components/Navbar/Navbar";
-// import Footer from "../../Components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import { useSelector, useDispatch } from "react-redux";
 import { cartReset } from "../../redux/CartPage/action";
 import { addToOrder } from "../../redux/Order/order.action";
@@ -43,8 +43,8 @@ const Orders = () => {
 
   return (
     <Box>
-      {/* <Navbar /> */}
-      <Box w="90%" m="auto">
+      <Navbar />
+      <Box w="90%" m="auto" mt={["","","","170px"]}>
         <HStack spacing={"100px"} mt="15px" mb="20px">
           <HStack>
             <Image
@@ -226,7 +226,7 @@ const Orders = () => {
         <br />
         <br />
       </Box>
-      {/* <Footer /> */}
+      <Footer />
     </Box>
   );
 };
