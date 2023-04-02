@@ -5,9 +5,11 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
+import AuthProvider from "./ContextApi/AuthContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  <AuthProvider>
   <Provider store={store}>
   <BrowserRouter>
     <ChakraProvider>
@@ -15,5 +17,6 @@ root.render(
     </ChakraProvider>
   </BrowserRouter>
   </Provider>
+  </AuthProvider>
 );
 

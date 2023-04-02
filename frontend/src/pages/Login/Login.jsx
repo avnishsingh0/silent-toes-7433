@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-// import { AuthContext } from "../../ContextApi/AuthContext";
+import { AuthContext } from "../../ContextApi/AuthContext";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 import {
@@ -30,7 +30,7 @@ const Login = (props) => {
   const [pass, setpass] = useState(false);
   const [show, setShow] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
-//   const { isAuth, setisAuth, Authdata, setAuthData } = useContext(AuthContext);
+  const { isAuth, setisAuth, Authdata, setAuthData } = useContext(AuthContext);
 
   const [incorrect, setinCorrect] = useState(false);
   const navigate = useNavigate();
@@ -61,7 +61,7 @@ const Login = (props) => {
       setinCorrect(false);
       if (loginData.email !== "" && loginData.password !== "") {
         const res = await fetch(
-          "https://harlequin-fawn-tutu.cyclic.app/user/login",
+          "https://busy-blue-chick-tie.cyclic.app/users/login",
           {
             method: "POST",
             body: JSON.stringify(loginData),
@@ -73,13 +73,13 @@ const Login = (props) => {
         let data = await res.json();
         if (res) {
           const credential = await fetch(
-            "https://harlequin-fawn-tutu.cyclic.app/user"
+            "https://busy-blue-chick-tie.cyclic.app/users/login"
           );
           let cred = await credential.json();
           localStorage.setItem("token", data.token);
           res1 = cred.filter((el) => el.email === loginData.email);
-        //   setisAuth(true);
-        //   setAuthData(res1);
+          setisAuth(true);
+          setAuthData(res1);
           if (loginData.email.includes("@glasscart.com")) {
             setLoading(false);
             setinCorrect(false);
