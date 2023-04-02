@@ -9,7 +9,7 @@ const Navbar = () => {
       <Box display={{ base: "none", xl: "inherit" }} color="blackAlpha.800">
         <NavbarCard1 />
         <NavbarCard2 />
-        <NavbarCard4 />
+        {/* <NavbarCard4 /> */}
       </Box>
       <Nav />
     </Box>

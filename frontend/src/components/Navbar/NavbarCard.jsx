@@ -11,7 +11,8 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  PopoverBody
+  PopoverBody,
+  Hide
 } from "@chakra-ui/react";
 import { FiPhoneCall } from "react-icons/fi";
 import { CiHeart } from "react-icons/ci";
@@ -157,7 +158,8 @@ export const NavbarCard2 = () => {
 
 export const NavbarCard4 = () => {
   return (
-    <Box cursor="pointer" bg="#fbf9f7" p={2.5}>
+    <Box cursor="pointer" bg="#fbf9f7" >
+    <Hide below="lg">
       <Flex gap={1} pl={2} pt={1} justifyContent="space-between">
         <NavbarCard5 />
         <HStack w="13%" ml="5%" justifyContent="right">
@@ -181,6 +183,7 @@ export const NavbarCard4 = () => {
           />
         </HStack>
       </Flex>
+      </Hide>
     </Box>
   );
 };

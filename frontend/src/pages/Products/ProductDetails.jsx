@@ -17,6 +17,9 @@ import {
     Flex
   } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
+import Navbar from "../../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer"
+
 const ProductDetails = () => {
   const { cart } = useSelector((state) => state.CartReducer);
     const { id } = useParams();
@@ -58,11 +61,13 @@ const ProductDetails = () => {
   
   return (
     <>
+    <Navbar/>
          <Grid
         m={5}
         gap={5}
         justifyContent="space-around"
         templateColumns="repeat(3, 1fr)"
+        mt={["","","","180px"]}
       >
         <GridItem
           borderRadius={10}
@@ -278,6 +283,7 @@ const ProductDetails = () => {
           <Image src={data.imageTsrc} />
         </GridItem>
       </Grid>
+      <Footer/>
     </>
   )
 }
