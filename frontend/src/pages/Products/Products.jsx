@@ -80,7 +80,7 @@ const Products = () => {
   return (
     <Box>
     <Navbar/>
-    <Box mt={["5rem","","","40px"]}>
+    <Box mt={["5rem","5rem","6rem","7rem"]}>
       <Image
         src="https://static1.lenskart.com/media/desktop/img/Mar23/spring/home/PLP%20Camapaign%20-%20WEB_1.jpg"
         alt="img"

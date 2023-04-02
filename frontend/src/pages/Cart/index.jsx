@@ -128,7 +128,7 @@ const CartPage = () => {
             xl: "row",
             "2xl": "row"
           }}
-          mt={["","","","200px"]}
+          mt={["6rem","","","150px"]}
         >
           <Flex
             flexDirection={"column"}
