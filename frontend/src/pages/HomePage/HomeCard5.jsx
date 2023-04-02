@@ -48,14 +48,15 @@ const HomeCard5 = ({ type, heading }) => {
             },
           }}
         >
-          {type.map((i) => (
-            <Box key={i.id}>
+          {type.map((el) => (
+            <Box key={el.caption}>
               <SwiperSlide>
-                <Link to={i.linked}>
+                <Link to={el.linked}>
                   <Square m="auto">
                     <Image
-                      src={`${i.img}`}
-                      alt={i.caption}
+                      // key={`${el.id}-image`}
+                      src={`${el.img}`}
+                      alt={el.caption}
                       boxSize="160px"
                       w="80%"
                     />
