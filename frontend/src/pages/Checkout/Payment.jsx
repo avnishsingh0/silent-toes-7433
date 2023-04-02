@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { useState } from "react";
 import { Box, Button, Flex, Image, Input } from "@chakra-ui/react";
 // import { useNavigate } from "react-router-dom";
@@ -7,6 +8,7 @@ import "./pay.css";
 import { useSelector, useDispatch } from "react-redux";
 import { cartReset } from "../../redux/CartPage/action"
 import { addToOrder } from "../../redux/Order/order.action";
+import { useNavigate } from "react-router-dom";
 
 const Payment = () => {
 //   const navigate = useNavigate();
@@ -26,6 +28,7 @@ const Payment = () => {
   const [names, setNames] = useState();
 
   const Required = (props) => {
+
     return (
       <Box
         fontSize={"14px"}
@@ -84,10 +87,11 @@ const Payment = () => {
         break;
     }
   };
+  const navigate=useNavigate()
 
   const handleClick = () => {
     dispatch(addToOrder(cart));
-    // navigate("/confirm");
+    navigate("/confirm");
     dispatch(cartReset());
   };
 
