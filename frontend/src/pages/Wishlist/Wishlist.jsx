@@ -36,7 +36,7 @@ const Wishlist = () => {
       <Navbar />
       <br />
       <br />
-      <Box minHeight="635" w="80%" m="auto">
+      <Box minHeight="635" w="80%" m="auto" mt={["40px","40px","100px","100px"]}>
         <Heading
           fontSize="25px"
           textAlign="left"
