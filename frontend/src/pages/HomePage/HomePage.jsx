@@ -68,11 +68,11 @@ const Home = () => {
         width="100%"
         height={["100px", "100px", "200px"]}
       />
-      {/* <HomeCard2
+      <HomeCard2
         type={HomeDetails2}
         //linked={"/personalcare"}
         src="https://i.imgur.com/Gry0Q5D.png"
-      /> */}
+      />
       <HomeCard3
         text="As Seen on Shark Tank"
         src="https://static1.lenskart.com/media/desktop/img/Dec22/1-Dec/Homepage-Banner-web.gif"
@@ -114,9 +114,9 @@ const Home = () => {
         src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/VC-Banner.jpg"
       />
       <br />
-        {/* <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" /> */}
+        <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" />
       <br />
-      {/* <HomeCard5 type={HomeDetails6} heading="SUNGLASSES" /> */}
+      <HomeCard5 type={HomeDetails6} heading="SUNGLASSES" />
       <Image
         src="https://static1.lenskart.com/media/desktop/img/Nov22/Updated%20brand%20banner%20jj%20.jpg"
         alt="img"
@@ -124,9 +124,9 @@ const Home = () => {
         width="100%"
         height={["100px", "100px", "400px"]}
       />
-      {/* <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" /> */}
+      <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" />
       <br />
-      {/* <HomeCard5 type={HomeDetails6} heading="SUNGLASSES" /> */}
+      <HomeCard5 type={HomeDetails6} heading="SUNGLASSES" />
       <Image
         src="https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/LK-AIR-Banner.jpg"
         alt="img"
@@ -134,7 +134,7 @@ const Home = () => {
         width="100%"
         height={["100px", "100px", "400px"]}
       />
-      {/* <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" /> */}
+      <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" />
       <Image
         src="https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/LK-Readers-Banner.jpg"
         alt="img"
@@ -142,7 +142,7 @@ const Home = () => {
         width="100%"
         height={["120px", "120px", "400px"]}
       />
-      {/* <HomeCard5 type={HomeDetails9} heading="EYEGLASSES" /> */}
+      <HomeCard5 type={HomeDetails9} heading="EYEGLASSES" />
       <Image
         src="https://static1.lenskart.com/media/desktop/img/Nov20/25-Nov/Banner05_Final2ndDec21.jpg"
         alt="img"
@@ -150,12 +150,12 @@ const Home = () => {
         width="100%"
         height={["100px", "100px", "400px"]}
       />
-      {/* <HomeCard5 type={HomeDetails7} heading="WITH POWER COMPUTER BLU LENSES" /> */}
+      <HomeCard5 type={HomeDetails7} heading="WITH POWER COMPUTER BLU LENSES" />
       <br />
-      {/* <HomeCard5
+      <HomeCard5
         type={HomeDetails8}
         heading="WITH ZERO POWER COMPUTER BLU LENSES"
-      /> */}
+      />
       <Image
         src="https://static1.lenskart.com/media/desktop/img/June22/Our-Brands-Banner.jpg"
         alt="img"
@@ -164,9 +164,9 @@ const Home = () => {
         height={["150px", "150px", "400px"]}
       />
       <br />
-      {/* <HomeCard5 type={HomeDetails10} heading="CONTACT LENSES" /> */}
+      <HomeCard5 type={HomeDetails10} heading="CONTACT LENSES" />
       <br />
-      {/* <HomeCard5 type={HomeDetails11} heading="COLOR CONTACT LENSES" /> */}
+      <HomeCard5 type={HomeDetails11} heading="COLOR CONTACT LENSES" />
       <Image
         src="https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/whatsapp.png"
         alt="img"
