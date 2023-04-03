@@ -90,7 +90,7 @@ const Login = (props) => {
             setLoading(false);
             setinCorrect(false);
             onClose();
-            navigate("/productlist");
+            // navigate("/productlist");
           } if(loginData.email.includes("admin@gmail.com")){
              setLoading(false);
             setinCorrect(false);
