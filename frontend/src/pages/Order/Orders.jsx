@@ -141,7 +141,7 @@ const Orders = () => {
                   PAY NOW
                 </Button>
                 <Button
-                  fontSize={["10px","10px","14px","12px"]} 
+                  fontSize={["10px","10px","14px","1px"]} 
                   ml="60%"
                   bg="#3bb3a9"
                   color={"white"}
@@ -173,11 +173,11 @@ const Orders = () => {
         </HStack>
         {cart.map((el) => {
           return (
-            <Box border={"1px"} borderColor="gray.300">
+            <Box border={"1px"} borderColor="gray.300" >
               <HStack color="gray.600">
                 <Image
                   src={el.imageTsrc}
-                  w={"200px"}
+                  w={["90px","90px","300px","200px"]}
                   h="100px"
                   m="10px 0px 10px 20px"
                 />
