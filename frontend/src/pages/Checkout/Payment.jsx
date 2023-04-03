@@ -94,9 +94,9 @@ const Payment = () => {
   return (
     <>
       <Navbar />
-      <Box mt={["", "", "", "200px"]}>
+      <Box mt={["80px", "80px", "100px", "140px"]}>
         <div className="card">
-          <div style={{ width: "70%", margin: "auto" }}>
+          <div style={{ width: "90%", margin: "auto" }}>
             <Box
               m="auto"
               boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
@@ -113,9 +113,10 @@ const Payment = () => {
                 PAYMENT OPTION
               </Box>
               <br />
-              <Box display={"flex"} fontSize="lg" gap="9">
+              <Box display={"flex"} fontSize={["8px","8px","lg","lg"]} gap={["20px","20px","50px","160px"]}>
                 <Box
                   w="200px"
+                  h={["250px","250px","300px",""]}
                   borderRight="2px solid gray"
                   borderBottom="2px solid gray"
                   borderRadius="2xl"
@@ -157,14 +158,14 @@ const Payment = () => {
                     Paytm
                   </Box>
                 </Box>
-                <Box m="10px 10px 10px 10px ">
+                <Box>
                   <Flex justifyContent={"space-between"} fontSize="lg">
-                    <Box fontWeight="bold" color="gray.600">
+                    <Box fontWeight="bold" color="gray.600" fontSize={["10px","","19px",""]}>
                       100% Secure
                     </Box>
                     <Image
-                      ml="80px"
-                      h="40px"
+                      ml={["","","","80px"]}
+                      h={["12px","12px","30px","40px"]}
                       src="https://static5.lenskart.com/images/cust_mailer/Mar-03/CheckoutStrip.png"
                     />
                   </Flex>
@@ -187,21 +188,19 @@ const Payment = () => {
                     </Box>
                   </Box>
 
-                  <Flex m="20px 0px " w="50%">
+                  <Flex m="20px 0px " w={["70%","70%","40%","50%"]}>
                     <Input
                       placeholder="MM/YY"
                       name="date"
                       type="text"
                       onChange={handleChange}
                       m="20px 10px 10px 10px "
-                      //   mr="10px"
-                      //   ml="10px"
                       fontSize="lg"
                       h="40px"
                       w="40%"
                       borderRadius="lg"
                       p="2%"
-                      ml="150px"
+                      ml={["","","","150px"]}
                     />
 
                     <Input
@@ -225,7 +224,7 @@ const Payment = () => {
                   </Box>
                   <Box ml="2%">{userData.cvv.length === 3 ? "" : cv}</Box>
 
-                  <Box>
+                  <Box >
                     <Input
                       placeholder="Cardholder Name"
                       type="text"
@@ -234,7 +233,7 @@ const Payment = () => {
                       fontSize="lg"
                       h="40px"
                       borderRadius="lg"
-                      p="2%"
+                      p={["","","","2%"]}
                       m="20px 10px 20px 10px"
                       w="70%"
                     />
@@ -253,7 +252,7 @@ const Payment = () => {
                       fontSize={"16px"}
                       bg="#3bb3a9"
                       color={"white"}
-                      p="25px 22px"
+                      p={["","","","25px 22px"]}
                       _hover={{ backgroundColor: "teal" }}
                       onClick={handleClick}
                       borderRadius="lg"
@@ -265,8 +264,9 @@ const Payment = () => {
                       fontSize={"16px"}
                       bg="#cccccc"
                       color={"white"}
-                      p="25px 22px"
+                      p={["","","","25px 22px"]}
                       borderRadius="lg"
+                      ml={["","","100px","150px"]}
                     >
                       PLACE ORDER
                     </Button>

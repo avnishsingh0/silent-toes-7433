@@ -126,15 +126,6 @@ module.exports = {
   menRouter,
 };
 
-
-
-
-
-
-
-
-
-
 // productPageRouter.get("/search", async (req, res) => {
 //   const { page, limit, sort } = req.query;
 //   const skip = (page - 1) * limit;

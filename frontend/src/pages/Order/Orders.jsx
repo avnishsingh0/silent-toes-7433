@@ -44,7 +44,7 @@ const Orders = () => {
   return (
     <Box>
       <Navbar />
-      <Box w="90%" m="auto" mt={["", "", "", "170px"]}>
+      <Box w="90%" m="auto" mt={["90px", "", "", "170px"]}>
         <HStack spacing={"100px"} mt="15px" mb="20px">
           <HStack>
             <Image
@@ -52,24 +52,24 @@ const Orders = () => {
               w={"40px"}
               h="40px"
             />
-            <Box fontSize={"16px"} fontWeight="400">
+            <Box fontSize={["12px","12px","","16px"]} fontWeight="400">
               Get Orders Updates on Whatsapp
             </Box>
-            <Switch size="lg" />
+            <Switch size="md" />
           </HStack>
           <Spacer />
         </HStack>
         <Box border={"1px"} borderColor="gray.300">
-          <Box p={"10px 10px 10px 10px "} m="15px 0px 0px 15px" w="97%">
+          <Box p={"5px 5px 10px 10px "} m="15px 0px 0px 15px" w="97%">
             <Flex justifyContent={"space-between"}>
-              <Flex gap="5">
+              <Flex gap="2">
                 <Flex>
-                  <Box fontSize={"15px"} fontWeight="400">
+                  <Box fontSize={["9px","9px","14px","14px"]} fontWeight="400">
                     Order ID :
                   </Box>
 
                   <Box
-                    fontSize={"14px"}
+                    fontSize={["9px","9px","14px","14px"]} 
                     ml="3px"
                     letterSpacing="1.5px"
                     fontWeight={"500"}
@@ -79,11 +79,11 @@ const Orders = () => {
                 </Flex>
 
                 <Flex>
-                  <Box fontSize={"15px"} fontWeight="400">
+                  <Box fontSize={["9px","9px","14px","14px"]}  fontWeight="400">
                     Order Date :
                   </Box>
                   <Box
-                    fontSize={"14px"}
+                    fontSize={["9px","9px","14px","14px"]} 
                     ml="3px"
                     letterSpacing="1.5px"
                     fontWeight={"500"}
@@ -93,12 +93,12 @@ const Orders = () => {
                 </Flex>
               </Flex>
               <Flex>
-                <Box fontSize={"16px"} fontWeight="400">
+                <Box fontSize={["9px","9px","14px","14px"]} fontWeight="400">
                   Total Price :
                 </Box>
 
                 <Box
-                  fontSize={"17px"}
+                  fontSize={["9px","9px","14px","14px"]}
                   ml="3px"
                   letterSpacing="1.5px"
                   fontWeight={"500"}
@@ -115,33 +115,33 @@ const Orders = () => {
               justifyContent="space-between"
             >
               <Box w="50%">
-                <Box fontWeight={"500"} fontSize="17px">
+                <Box fontWeight={"500"} fontSize={["13px","13px","17px","17px"]} >
                   Complete Your Payment
                 </Box>
                 <Box
                   fontWeight={"350"}
-                  fontSize="15px"
+                  fontSize={["12px","12px","14px","14px"]} 
                   flexWrap={"nowrap"}
                   display="flex"
                 >
                   Order will be processed after payment
                 </Box>
               </Box>
-              <HStack w="50%" justifyContent="space-between">
+              <HStack w={["70%","70%","40%","40%"]} justifyContent="space-between">
                 <Button
-                  fontSize={"15px"}
-                  ml="60%"
+                  fontSize={["10px","10px","14px","14px"]} 
+                  ml={["","","","60%"]}
                   bg="#3bb3a9"
                   color={"white"}
                   borderRadius="4px"
-                  p="15px 35px 15px 35px "
+                  p="10px 35px 15px 35px "
                   _hover={{ backgroundColor: "teal" }}
                   onClick={() => navigate("/payment")}
                 >
                   PAY NOW
                 </Button>
                 <Button
-                  fontSize={"15px"}
+                  fontSize={["10px","10px","14px","12px"]} 
                   ml="60%"
                   bg="#3bb3a9"
                   color={"white"}

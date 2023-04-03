@@ -123,10 +123,18 @@ function Shipping() {
   };
 
   return (
-    <>
+    <Box>
       <Navbar />
-      <Flex m="auto" justifyContent="space-evenly" mt={["","","","170px"]}>
-        <Box id="addres" w="65%">
+      <Box >
+      <Flex m="auto" justifyContent="space-evenly" mt={["80px","80px","80px","130px"]} flexDirection={{
+            base: "column",
+            sm: "column",
+            md: "column",
+            lg: "row",
+            xl: "row",
+            "2xl": "row"
+          }} >
+        <Box id="addres" w={"60%"}>
           <Text
             id="ships"
             bg="teal.400"
@@ -297,7 +305,7 @@ function Shipping() {
               </Box>
             </Flex>
             <br />
-
+<Box mr={"390px"}>
             {userData.first_name.length >= 1 &&
             userData.last_name.length >= 1 &&
             userData.phone.length === 10 &&
@@ -312,18 +320,20 @@ function Shipping() {
                 CONTINUE
               </button>
             ) : (
-              <button id="shiping-disable">CONTINUE</button>
+              <button id="shiping-disable" >CONTINUE</button>
             )}
+            </Box>
           </Box>
           <br />
         </Box>
 
         <CartItem />
       </Flex>
+      </Box>
       <br />
       <br />
       <Footer />
-    </>
+    </Box>
   );
 }
 
