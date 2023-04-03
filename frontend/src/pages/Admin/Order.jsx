@@ -72,7 +72,7 @@ const Order = () => {
                   <Button
                     bg="tomato"
                     variant="solid"
-                    onClick={() => deleteItem(product.id)}
+                    onClick={() => deleteItem(product._id)}
                   >
                     Reject
                   </Button>
