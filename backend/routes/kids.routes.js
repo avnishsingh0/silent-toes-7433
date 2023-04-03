@@ -50,13 +50,10 @@ kidstRouter.get("/", async (req, res) => {
       .skip(parseInt(req.query.page) * 12)
       .limit(12);
     res.send(kids);
-
   } catch (error) {
     res.status(500).send(error);
   }
 });
-
-
 
 kidstRouter.get("/:id", async (req, res) => {
   try {
@@ -79,9 +76,7 @@ kidstRouter.post("/", async (req, res) => {
   try {
     const newKids = new KidsModel(payload);
     await newKids.save();
-    res
-      .status(201)
-      .json({ newKids, message: "New Kids successfully Added" });
+    res.status(201).json({ newKids, message: "New Kids successfully Added" });
   } catch (err) {
     console.log("err :", err);
     res.status(400).send({ msg: err });
@@ -126,7 +121,6 @@ kidstRouter.delete("/:id", async (req, res) => {
     res.send({ msg: err });
   }
 });
-
 
 module.exports = {
   kidstRouter,

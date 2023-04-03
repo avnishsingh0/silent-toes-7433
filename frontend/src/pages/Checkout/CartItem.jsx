@@ -14,15 +14,16 @@ export default function CartItem() {
 
   return (
     <>
-      <Flex flexDirection="column" w="350px" mt="10px">
+      <Flex flexDirection="column" w="350px" mt="10px" >
         <Box
           display="flex"
           flexDirection="row"
           justifyContent="space-between"
           bg="#4B4C51"
           color="#fff"
+         
         >
-          <Text ml="5px" fontSize="md">
+          <Text ml="5px" fontSize="md" >
             SHOPPING CART:
           </Text>
           <Text mr="5px" fontSize="md">

@@ -5,7 +5,6 @@ const authenticate = (req, res, next) => {
   if (token) {
     const decoded = jwt.verify(token, process.env.key);
     if (decoded) {
-        
       const userID = decoded.userID;
       console.log(decoded);
       req.body.userID = userID;
