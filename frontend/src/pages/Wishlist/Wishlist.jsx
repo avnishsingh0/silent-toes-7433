@@ -2,8 +2,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { Box, Flex, Text, Button, Heading, Grid } from "@chakra-ui/react";
 import { removeFromWishlist } from "../../redux/wishlist/wishlist.action";
 import { addToCart } from "../../redux/CartPage/action";
-// import Navbar from "../../Components/Navbar/Navbar";
-// import Footer from "../../Components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import { useNavigate } from "react-router-dom";
 
 const Wishlist = () => {
@@ -33,7 +33,7 @@ const Wishlist = () => {
 
   return (
     <Box>
-      {/* <Navbar /> */}
+      <Navbar />
       <br />
       <br />
       <Box minHeight="635" w="80%" m="auto">
@@ -148,7 +148,7 @@ const Wishlist = () => {
           </Box>
         )}
       </Box>
-      {/* <Footer /> */}
+      <Footer />
     </Box>
   );
 };

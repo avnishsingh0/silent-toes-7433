@@ -6,7 +6,6 @@ import {
   MenuList,
   Text,
   useDisclosure,
-  // Link,
   HStack,
   Image,
   Input,

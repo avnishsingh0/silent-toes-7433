@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Heading, Button, Flex } from "@chakra-ui/react";
+import { Heading, Button, Flex } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const CartEmpty = () => {

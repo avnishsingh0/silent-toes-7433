@@ -1,8 +1,6 @@
 import React from "react";
 import { Box, Flex, Image } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-// import Navbar from "../../Components/Navbar/Navbar";
-// import Footer from "../../Components/Footer/Footer";
 
 export const Confirm = () => {
   const navigate = useNavigate();
@@ -12,7 +10,6 @@ export const Confirm = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
       <br />
       <Flex
         flexDirection={"column"}
@@ -28,8 +25,6 @@ export const Confirm = () => {
         <h1>Your order has been placed successfully</h1>
       </Flex>
       <br />
-
-      {/* <Footer /> */}
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Login from "../../pages/Login/Login";
 import Signup from "../../pages/Signup/Signup";
-// import { AuthContext } from "../../ContextApi/AuthContext";
+import { AuthContext } from "../../ContextApi/AuthContext";
 import { Link, Navigate } from "react-router-dom";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import {
@@ -33,7 +33,7 @@ import logoImg from "./EyeCare.png"
 function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const firstField = React.useRef();
-  // const { isAuth, setisAuth, Authdata } = useContext(AuthContext);
+  const { isAuth, setisAuth, Authdata } = useContext(AuthContext);
   const navigate = useNavigate();
 
   return (
@@ -77,7 +77,7 @@ function Nav() {
             <DrawerContent color="blackAlpha.900">
               <DrawerCloseButton />
               <DrawerHeader bg="whiteAlpha.900">
-                {/* {isAuth ? ( */}
+                {isAuth ? (
                   <div
                     style={{
                       borderBottom: "2px solid #18CFA8",
@@ -115,7 +115,7 @@ function Nav() {
                             color: "blackAlpha.900"
                           }}
                         >
-                          {/* {Authdata[0].first_name} */}
+                          {Authdata[0].first_name}
                         </h1>
                         <Text color="gray.500" mt="5%" fontSize="md">
                           Enjoy Buy 1 Get 1 offer for 365 days
@@ -133,7 +133,7 @@ function Nav() {
                       GET GOLD MEMBERSHIP
                     </Button>
                   </div>
-                {/* ) : ( */}
+                ) : (
                   <div
                     style={{
                       padding: "5%",
@@ -170,7 +170,7 @@ function Nav() {
                       </Box>
                     </div>
                   </div>
-                {/* )} */}
+                )}
               </DrawerHeader>
               <DrawerBody borderBottomWidth="1px" bg="whiteAlpha.900">
                 <Box display="flex" flexDirection="column" fontSize="16px">
@@ -428,7 +428,7 @@ function Nav() {
 
                 <Accordion allowMultiple></Accordion>
               </DrawerBody>
-              {/* {isAuth && ( */}
+              {isAuth && (
                 <DrawerFooter bg="whiteAlpha.900">
                   <Button
                     mt="5%"
@@ -438,14 +438,14 @@ function Nav() {
                     p="6% 15%"
                     _hover={{ bg: "blue.200" }}
                     onClick={() => {
-                    //   setisAuth(false);
+                      setisAuth(false);
                       return <Navigate to="/" />;
                     }}
                   >
                     Sign Out
                   </Button>
                 </DrawerFooter>
-              {/* )} */}
+              )}
             </DrawerContent>
           </Drawer>
         </Box>

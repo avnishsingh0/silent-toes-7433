@@ -3,7 +3,7 @@ import { ADD_TO_WISHLIST, REMOVE_FROM_WISHLIST, RESET } from "./wishlist.types";
 const wishlistInitalState = {
   loading: false,
   error: false,
-  wishlist: []
+  wishlist: [],
 };
 
 export const wishlistReducer = (state = wishlistInitalState, action) => {
@@ -14,22 +14,22 @@ export const wishlistReducer = (state = wishlistInitalState, action) => {
       const product = payload;
 
       const newItem = {
-        ...product
+        ...product,
       };
       return {
         ...state,
-        wishlist: [...wishlist, newItem]
+        wishlist: [...wishlist, newItem],
       };
     }
     case REMOVE_FROM_WISHLIST: {
       return {
-        wishlist: state.wishlist.filter((item) => item._id !== payload)
+        wishlist: state.wishlist.filter((item) => item._id !== payload),
       };
     }
 
     case RESET: {
       return {
-        wishlist: []
+        wishlist: [],
       };
     }
 

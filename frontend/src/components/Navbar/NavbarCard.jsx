@@ -22,8 +22,8 @@ import Login from "../../pages/Login/Login";
 import Signup from "../../pages/Signup/Signup";
 import { NavbarDetail1 } from "./NavbarDetail";
 import { Link, Navigate } from "react-router-dom";
-// import { useContext } from "react";
-// import { AuthContext } from "../../ContextApi/AuthContext";
+import { useContext } from "react";
+import { AuthContext } from "../../ContextApi/AuthContext";
 import NavbarCard5 from "./NavbarCard5";
 import { useNavigate } from "react-router-dom";
 import logoImg from "./EyeCare.png"
@@ -46,11 +46,11 @@ export const NavbarCard1 = () => {
 };
 
 export const NavbarCard2 = () => {
-  // const { isAuth, setisAuth, Authdata } = useContext(AuthContext);
+  const { isAuth, setisAuth, Authdata } = useContext(AuthContext);
   const navigate = useNavigate();
 
   return (
-    <Box cursor="pointer">
+    <Box cursor="pointer" h={"100px"}>
       <HStack m="auto" justifyContent={"space-between"}>
         <Box  ml={35}>
           <Link to="/">
@@ -83,39 +83,40 @@ export const NavbarCard2 = () => {
             >
               Track Order
             </Button>
-            {/* {isAuth === true ? ( */}
+            {isAuth === true ? (
               <Popover trigger="hover">
                 <PopoverTrigger>
                   <Box
                     fontWeight={"600"}
                     fontSize="16px"
                     m="auto"
-                    mt="-2px"
+                    // mt="-5px"
                     w="90px"
                     textAlign="center"
                   >
-                    {/* {Authdata[0].first_name} */}
+                    {Authdata[0].first_name}
                     <TriangleDownIcon
-                      ml="2px"
+                      // ml="2px"
                       fontSize={"9px"}
                       _hover={{ transform: "rotate(180deg)" }}
                     />
                   </Box>
                 </PopoverTrigger>
                 <PopoverContent
-                  w="120px"
+                  w="90px"
+                  // mb={10}
                   boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
                 >
                   <PopoverBody
-                    h={"40px"}
-                    pl="6"
-                    fontSize="16px"
+                    // h={"30px"}
+                    // pl="6"
+                    fontSize="14px"
                     _hover={{ fontWeight: "bold" }}
                   >
                     <Box
                       color="#333368"
                       onClick={() => {
-                        // setisAuth(false);
+                        setisAuth(false);
                         return <Navigate to="/" />;
                       }}
                     >
@@ -124,10 +125,12 @@ export const NavbarCard2 = () => {
                   </PopoverBody>
                 </PopoverContent>
               </Popover>
+            ) : (
               <Box display={"flex"}>
                 <Login />
                 <Signup />
               </Box>
+            )}
             <Button
               leftIcon={<CiHeart />}
               size="lg"

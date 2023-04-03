@@ -14,36 +14,28 @@ import Products from "./Products/Products";
 import Blog from "./Admin/Dashboard";
 import CartPage from "./Cart/index";
 import Wishlist from "./Wishlist/Wishlist";
-// import { Privateroutes } from "../ContextApi/Privateroute";
+import { Privateroutes } from "../ContextApi/Privateroute";
 const Allroutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home/>} />
+      <Route path="/" element={<Home />} />
       <Route path="/product" element={<Products />} />
       <Route path="/product/:id" element={<ProductDetails />} />
       <Route path="/adminpanel" element={<Blog />} />
       <Route path="/adminpanel/package" element={<Multistep />} />
       <Route path="/adminpanel/customers" element={<Customers />} />
       <Route path="/adminpanel/order" element={<Order />} />
-      
+
       <Route
         path="/cartpage"
         element={
-          // <Privateroutes>
+          <Privateroutes>
             <CartPage />
-            // </Privateroutes>
+          </Privateroutes>
         }
       />
-      
-      
-      <Route
-        path="/wishlist"
-        element={
-          
-            <Wishlist/>
-          
-        }
-      />
+
+      <Route path="/wishlist" element={<Wishlist />} />
       <Route path="/payment" element={<Payment />} />
       <Route path="/orders" element={<Orders />} />
       <Route path="/shipping" element={<Shipping />} />
@@ -53,5 +45,4 @@ const Allroutes = () => {
   );
 };
 
-
-export default Allroutes
+export default Allroutes;
