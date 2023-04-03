@@ -13,19 +13,19 @@ import {
 import React, { useEffect, useState } from "react";
 import SidebarWithHeader from "./Sidebar";
 import InitialFocus from "./Modal";
-import Pagination from "../Products/Pagination"
+// import Pagination from "../Products/Pagination"
 
 const Customers = () => {
   const [cart, setCart] = useState([]);
-  const [page, setPage] = useState(0);
+  // const [page, setPage] = useState(0);
 
   useEffect(() => {
     getJewlery();
   }, []);
 
   function getJewlery() {
-    console.log("page",page)
-    fetch(`https://good-cyan-giraffe-wig.cyclic.app/product/page=${page}`).then((result) => {
+    // console.log("page",page)
+    fetch(`https://good-cyan-giraffe-wig.cyclic.app/product`).then((result) => {
       result.json().then((resp) => {
         setCart(resp);
       });
@@ -96,7 +96,7 @@ const Customers = () => {
           ))}
         </Table>
       </TableContainer>
-      <Pagination current={page} onChange={(value) => setPage(value)} />
+      {/* <Pagination current={page} onChange={(value) => setPage(value)} /> */}
     </Box>
   );
 };

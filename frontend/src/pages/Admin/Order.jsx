@@ -19,7 +19,7 @@ const Order = () => {
   }, []);
 
   function getJewlery() {
-    fetch("https://good-cyan-giraffe-wig.cyclic.app/users").then(
+    fetch("https://busy-blue-chick-tie.cyclic.app/users").then(
       (result) => {
         result.json().then((resp) => {
           setCart(resp);
@@ -28,7 +28,7 @@ const Order = () => {
     );
   }
   function deleteItem(id) {
-    fetch(`https://good-cyan-giraffe-wig.cyclic.app/users/${id}`, {
+    fetch(`https://busy-blue-chick-tie.cyclic.app/users/${id}`, {
       method: "DELETE",
     }).then((result) => {
       result.json().then((resp) => {
@@ -45,9 +45,9 @@ const Order = () => {
           <Thead>
             <Tr>
               <Th>User Name</Th>
-              <Th>User Address</Th>
-              <Th>Address</Th>
-              <Th>No of Item</Th>
+              <Th>User Last Name</Th>
+              <Th>Email</Th>
+              <Th>Phone Number</Th>
 
               <Th>Reject</Th>
             </Tr>
@@ -57,16 +57,16 @@ const Order = () => {
             <Tbody key={index}>
               <Tr>
                 <Td>
-                  {product.fullName}
+                  {product.first_name}
                   {/* <Img
                   w={50}
                   h={50}
                   src={product.image1}
                 /> */}
                 </Td>
-                <Td>{product.address}</Td>
-                <Td>{product.city}</Td>
-                <Td>{product.numOfItems}</Td>
+                <Td>{product.last_name}</Td>
+                <Td>{product.email}</Td>
+                <Td>{product.ph_no}</Td>
 
                 <Td>
                   <Button

@@ -91,7 +91,13 @@ const Login = (props) => {
             setinCorrect(false);
             onClose();
             navigate("/productlist");
-          } else {
+          } if(loginData.email.includes("admin@gmail.com")){
+             setLoading(false);
+            setinCorrect(false);
+            onClose();
+            navigate("/adminpanel");
+          }
+          else {
             console.log(data);
             setLoading(false);
             setinCorrect(false);
