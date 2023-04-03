@@ -1,4 +1,5 @@
 function Pagination({ current, onChange }) {
+  console.log()
     const style = {
       background: "gray",
       color: "white",

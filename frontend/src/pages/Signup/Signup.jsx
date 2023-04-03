@@ -112,9 +112,14 @@ const Signup = () => {
 
   const getData = (body) => {
     setLoading(true);
+<<<<<<< HEAD
 
     // fetch(`https://harlequin-fawn-tutu.cyclic.app/user`)
     fetch(`https://busy-blue-chick-tie.cyclic.app/users`)
+=======
+    
+    fetch(`https://good-cyan-giraffe-wig.cyclic.app/users/register`)
+>>>>>>> 52e58895ac8f533363b75ad01e7ee08bcd6c55e8
       .then((res) => res.json())
       .then((res) => {
         res.map((el) => {
@@ -128,7 +133,7 @@ const Signup = () => {
       })
       .then(() => {
         if (flag === false) {
-          fetch(`https://busy-blue-chick-tie.cyclic.app/users/register`, {
+          fetch(`https://good-cyan-giraffe-wig.cyclic.app/users/register`, {
             method: "POST",
             body: JSON.stringify(body),
             headers: {

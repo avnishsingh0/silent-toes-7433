@@ -1,7 +1,11 @@
 import React from "react";
 import { Box, Grid, Text, Image, Center } from "@chakra-ui/react";
-
+import { useNavigate} from "react-router-dom";
 const HomeCard = ({ type }) => {
+  const navigate= useNavigate()
+  const navigteProduct = () =>{
+    navigate("/product")
+  }
   return (
     <Box mb="2" cursor="pointer" bgColor="#f5f5f5" p="4">
       <Grid
@@ -15,6 +19,7 @@ const HomeCard = ({ type }) => {
         gap={6}
         w="99%"
         m="auto"
+        cursor={'pointer'}
       >
         {type.map((i) => (
           <Box
@@ -26,6 +31,7 @@ const HomeCard = ({ type }) => {
             bgColor="white"
             p="1"
             pb="2.5"
+            onClick={navigteProduct}
           >
             <Center>
               <Image src={`${i.img}`} alt={i.name} w="100%" />

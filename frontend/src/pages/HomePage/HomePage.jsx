@@ -23,7 +23,8 @@ import {
   HomeDetails12,
 } from "./HomeDetails";
 import { Image, Box } from "@chakra-ui/react";
-// import Navbar from "../../components/Footer/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
+import {NavbarCard4} from "../../components/Navbar/NavbarCard";
 
 const Line4 = () => {
   return (
@@ -47,9 +48,10 @@ const Line3 = () => {
 };
 const Home = () => {
   return (
-    <Box mt={["40px","40px","40px","180px"]}>
+    <Box mt={["70px","40px","90px","120px"]}>
     {/* <Box > */}
-      {/* <Navbar /> */}
+      <Navbar />
+      <NavbarCard4 />
       <HomeCard type={HomeDetails} />
       <HomeCard1 type={HomeDetails1} />
        <Image
@@ -112,7 +114,7 @@ const Home = () => {
         src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/VC-Banner.jpg"
       />
       <br />
-        <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" />
+        {/* <HomeCard5 type={HomeDetails5} heading="EYEGLASSES" /> */}
       <br />
       {/* <HomeCard5 type={HomeDetails6} heading="SUNGLASSES" /> */}
       <Image

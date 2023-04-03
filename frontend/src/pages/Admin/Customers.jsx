@@ -13,15 +13,19 @@ import {
 import React, { useEffect, useState } from "react";
 import SidebarWithHeader from "./Sidebar";
 import InitialFocus from "./Modal";
+import Pagination from "../Products/Pagination"
+
 const Customers = () => {
   const [cart, setCart] = useState([]);
+  const [page, setPage] = useState(0);
 
   useEffect(() => {
     getJewlery();
   }, []);
 
   function getJewlery() {
-    fetch("https://good-cyan-giraffe-wig.cyclic.app/product").then((result) => {
+    console.log("page",page)
+    fetch(`https://good-cyan-giraffe-wig.cyclic.app/product/page=${page}`).then((result) => {
       result.json().then((resp) => {
         setCart(resp);
       });
@@ -82,7 +86,7 @@ const Customers = () => {
                     h={["19", "18", "23", "50"]}
                     bg="tomato"
                     variant="solid"
-                    onClick={() => deleteItem(product.id)}
+                    onClick={() => deleteItem(product._id)}
                   >
                     Delete
                   </Button>
@@ -92,6 +96,7 @@ const Customers = () => {
           ))}
         </Table>
       </TableContainer>
+      <Pagination current={page} onChange={(value) => setPage(value)} />
     </Box>
   );
 };

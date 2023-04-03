@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import CartItem from "./CartItem";
 import { useNavigate } from "react-router-dom";
 import { Box, Text, Flex } from "@chakra-ui/react";
-// import Navbar from "../../Components/Navbar/Navbar";
-// import Footer from "../../Components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import "./pay.css";
 
 function Shipping() {
@@ -124,7 +124,7 @@ function Shipping() {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Flex m="auto" justifyContent="space-evenly" mt={["","","","170px"]}>
         <Box id="addres" w="65%">
           <Text
@@ -322,7 +322,7 @@ function Shipping() {
       </Flex>
       <br />
       <br />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
