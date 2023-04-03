@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../ContextApi/AuthContext";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
@@ -55,7 +55,10 @@ const Login = (props) => {
     setbtn(buton);
   };
 
+  
+
   const getData = async () => {
+
     try {
       setLoading(true);
       setinCorrect(false);
