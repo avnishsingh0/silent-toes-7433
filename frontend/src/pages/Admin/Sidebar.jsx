@@ -30,12 +30,12 @@ import {
   FiBell,
   FiChevronDown,
 } from "react-icons/fi";
+import {Link} from "react-router-dom"
 const LinkItems = [
   { name: "Dashboard", icon: FiHome, links: "/adminpanel" },
   { name: "Add Product", icon: FiTrendingUp, links: "/adminpanel/package" },
   { name: "Customers", icon: FiCompass, links: "/adminpanel/customers" },
-  { name: "Orders", icon: FiStar, links: "/adminpanel/order" },
-  { name: "Account", icon: FiSettings, links: "/logis" },
+  { name: "Users", icon: FiStar, links: "/adminpanel/order" },
 ];
 
 export default function SidebarWithHeader({ children }) {
@@ -196,7 +196,7 @@ const MobileNav = ({ onOpen, ...rest }) => {
               <MenuItem>Settings</MenuItem>
               <MenuItem>Billing</MenuItem>
               <MenuDivider />
-              <MenuItem>Sign out</MenuItem>
+              <Link to="/"><MenuItem>Sign out</MenuItem></Link>
             </MenuList>
           </Menu>
         </Flex>
