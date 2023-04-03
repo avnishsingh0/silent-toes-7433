@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import { NavbarCard1, NavbarCard2, NavbarCard4 } from "./NavbarCard";
+import { NavbarCard1, NavbarCard2} from "./NavbarCard";
 import Nav from "./Nav";
 
 const Navbar = () => {
@@ -9,7 +9,6 @@ const Navbar = () => {
       <Box display={{ base: "none", xl: "inherit" }} color="blackAlpha.800">
         <NavbarCard1 />
         <NavbarCard2 />
-        {/* <NavbarCard4 /> */}
       </Box>
       <Nav />
     </Box>

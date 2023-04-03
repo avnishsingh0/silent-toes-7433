@@ -1,24 +1,21 @@
-/* eslint-disable no-undef */
 import React, { useState } from "react";
 import { Box, Button, Flex, Image, Input } from "@chakra-ui/react";
-// import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import "./pay.css";
 import { useSelector, useDispatch } from "react-redux";
-import { cartReset } from "../../redux/CartPage/action"
+import { cartReset } from "../../redux/CartPage/action";
 import { addToOrder } from "../../redux/Order/order.action";
 import { useNavigate } from "react-router-dom";
 
 const Payment = () => {
-//   const navigate = useNavigate();
   const { cart } = useSelector((state) => state.CartReducer);
   const dispatch = useDispatch();
   const init = {
     card: "",
     date: "",
     cvv: "",
-    cardname: ""
+    cardname: "",
   };
 
   const [userData, setUserData] = useState(init);
@@ -28,7 +25,6 @@ const Payment = () => {
   const [names, setNames] = useState();
 
   const Required = (props) => {
-
     return (
       <Box
         fontSize={"14px"}
@@ -87,7 +83,7 @@ const Payment = () => {
         break;
     }
   };
-  const navigate=useNavigate()
+  const navigate = useNavigate();
 
   const handleClick = () => {
     dispatch(addToOrder(cart));
@@ -98,7 +94,7 @@ const Payment = () => {
   return (
     <>
       <Navbar />
-      <Box mt={["","","","200px"]}>
+      <Box mt={["", "", "", "200px"]}>
         <div className="card">
           <div style={{ width: "70%", margin: "auto" }}>
             <Box
@@ -198,8 +194,8 @@ const Payment = () => {
                       type="text"
                       onChange={handleChange}
                       m="20px 10px 10px 10px "
-                    //   mr="10px"
-                    //   ml="10px"
+                      //   mr="10px"
+                      //   ml="10px"
                       fontSize="lg"
                       h="40px"
                       w="40%"
@@ -277,7 +273,14 @@ const Payment = () => {
                   )}
                 </Box>
               </Box>
-              <Box p="10px" fontSize="lg" fontWeight="medium" color="gray.500" ml="110px" mt="20px">
+              <Box
+                p="10px"
+                fontSize="lg"
+                fontWeight="medium"
+                color="gray.500"
+                ml="110px"
+                mt="20px"
+              >
                 GlassCart Assurance
               </Box>
               <Image

@@ -13,7 +13,7 @@ import {
   Image,
   Spacer,
   Switch,
-  Text
+  Text,
 } from "@chakra-ui/react";
 
 const Orders = () => {
@@ -44,7 +44,7 @@ const Orders = () => {
   return (
     <Box>
       <Navbar />
-      <Box w="90%" m="auto" mt={["","","","170px"]}>
+      <Box w="90%" m="auto" mt={["", "", "", "170px"]}>
         <HStack spacing={"100px"} mt="15px" mb="20px">
           <HStack>
             <Image

@@ -14,7 +14,6 @@ export const orderReducer = (state = orderInitalState, action) => {
         order: [...state.order, payload],
       };
     }
-
     default: {
       return state;
     }

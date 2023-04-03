@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { AuthContext } from "../../ContextApi/AuthContext";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
@@ -30,7 +30,8 @@ const Login = (props) => {
   const [pass, setpass] = useState(false);
   const [show, setShow] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { isAuth, setisAuth, Authdata, setAuthData } = useContext(AuthContext);
+  const { setisAuth, setAuthData } = useContext(AuthContext);
+  // const { isAuth, Authdata} from useContext(AuthContext);
   const toast=useToast()
   const [incorrect, setinCorrect] = useState(false);
   const navigate = useNavigate();
@@ -64,7 +65,6 @@ const Login = (props) => {
       setinCorrect(false);
       if (loginData.email !== "" && loginData.password !== "") {
         const res = await fetch(
-          // "https://harlequin-fawn-tutu.cyclic.app/user/login",
           "https://busy-blue-chick-tie.cyclic.app/users/login",
           {
             method: "POST",
@@ -77,7 +77,6 @@ const Login = (props) => {
         let data = await res.json();
         if (res) {
           const credential = await fetch(
-            // "https://harlequin-fawn-tutu.cyclic.app/user"
             "https://busy-blue-chick-tie.cyclic.app/users"
           );
           let cred = await credential.json();
@@ -90,7 +89,7 @@ const Login = (props) => {
             setLoading(false);
             setinCorrect(false);
             onClose();
-            // navigate("/productlist");
+            navigate("/productlist");
           } if(loginData.email.includes("admin@gmail.com")){
              setLoading(false);
             setinCorrect(false);
@@ -119,7 +118,6 @@ const Login = (props) => {
     console.log("HI")
     try{
       const res = await fetch(
-        // "https://harlequin-fawn-tutu.cyclic.app/user/login",
         "https://busy-blue-chick-tie.cyclic.app/users/login",
         {
           method: "POST",
@@ -302,7 +300,7 @@ const Login = (props) => {
               ) : (
                 <Button
                   bgColor={"#cccccc"}
-                  // onClick={handlesign}
+                  onClick={handlesign}
                   width="100%"
                   borderRadius={"35px/35px"}
                   fontSize="18px"

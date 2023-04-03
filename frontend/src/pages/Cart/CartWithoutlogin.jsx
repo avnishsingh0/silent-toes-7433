@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Text, Heading, Flex } from "@chakra-ui/react";
+import { Text, Flex } from "@chakra-ui/react";
 import { BsArrowRightCircle } from "react-icons/bs";
 
 
