@@ -49,7 +49,7 @@ const Signup = () => {
         fontSize={"14px"}
         m="3px 0px 3px 0px"
         color={"#ff1f1f"}
-        fontWeight="400"
+        fontWeight="500"
         letterSpacing={"-0.4px"}
       >
         {props.info}
@@ -113,7 +113,8 @@ const Signup = () => {
   const getData = (body) => {
     setLoading(true);
 
-    fetch(`https://busy-blue-chick-tie.cyclic.app/users/register`)
+    // fetch(`https://harlequin-fawn-tutu.cyclic.app/user`)
+    fetch(`https://busy-blue-chick-tie.cyclic.app/users`)
       .then((res) => res.json())
       .then((res) => {
         res.map((el) => {

@@ -18,7 +18,7 @@ import { Privateroutes } from "../ContextApi/Privateroute";
 const Allroutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<h1>ssss</h1>} />
+      <Route path="/" element={<Home/>} />
       <Route path="/product" element={<Products />} />
       <Route path="/product/:id" element={<ProductDetails />} />
 

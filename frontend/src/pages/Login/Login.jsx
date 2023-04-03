@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { AuthContext } from "../../ContextApi/AuthContext";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
-import {
+import {useToast,
   Checkbox,
   useDisclosure,
   Link,
@@ -31,7 +31,7 @@ const Login = (props) => {
   const [show, setShow] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { isAuth, setisAuth, Authdata, setAuthData } = useContext(AuthContext);
-
+  const toast=useToast()
   const [incorrect, setinCorrect] = useState(false);
   const navigate = useNavigate();
   let res1 = [];
@@ -46,7 +46,7 @@ const Login = (props) => {
         fontSize={"14px"}
         mt="5px"
         color={"#ff1f1f"}
-        fontWeight="400"
+        fontWeight="500"
         letterSpacing={"-0.4px"}
       >
         Please enter a valid Email or Mobile Number.
@@ -61,6 +61,7 @@ const Login = (props) => {
       setinCorrect(false);
       if (loginData.email !== "" && loginData.password !== "") {
         const res = await fetch(
+          // "https://harlequin-fawn-tutu.cyclic.app/user/login",
           "https://busy-blue-chick-tie.cyclic.app/users/login",
           {
             method: "POST",
@@ -73,9 +74,11 @@ const Login = (props) => {
         let data = await res.json();
         if (res) {
           const credential = await fetch(
-            "https://busy-blue-chick-tie.cyclic.app/users/login"
+            // "https://harlequin-fawn-tutu.cyclic.app/user"
+            "https://busy-blue-chick-tie.cyclic.app/users"
           );
           let cred = await credential.json();
+          console.log(cred)
           localStorage.setItem("token", data.token);
           res1 = cred.filter((el) => el.email === loginData.email);
           setisAuth(true);
@@ -103,7 +106,40 @@ const Login = (props) => {
     }
   };
 
-  const handlesign = () => {
+  const handlesign = async () => {
+    console.log("HI")
+    try{
+      const res = await fetch(
+        // "https://harlequin-fawn-tutu.cyclic.app/user/login",
+        "https://busy-blue-chick-tie.cyclic.app/users/login",
+        {
+          method: "POST",
+          body: JSON.stringify(loginData),
+          headers: {
+            "Content-type": "application/json"
+          }
+        }
+      );
+      let data= await res.json()
+       localStorage.setItem("token", data.token);
+      console.log(data)
+      if(data.token){
+        toast({
+          title:"Login-Sucessfull",
+          status:"success",
+          description:"You will redirected on product-page",
+          onClosable:true,
+          duration:5000,
+          position:"top"
+        })
+        navigate("/product")
+        
+      }
+
+    }catch(err){
+      console.log(err)
+    }
+    
     setpass(true);
     if (loginData.password.length > 6) {
       getData(loginData);
@@ -257,6 +293,7 @@ const Login = (props) => {
               ) : (
                 <Button
                   bgColor={"#cccccc"}
+                  // onClick={handlesign}
                   width="100%"
                   borderRadius={"35px/35px"}
                   fontSize="18px"
