@@ -16,10 +16,10 @@ export const Confirm = () => {
         justifyContent="center"
         alignItems={"center"}
         fontWeight="700"
-        fontSize={30}
+        fontSize={[15,15,30,30]}
         marginBottom="50"
       >
-        <Box w={400}>
+        <Box w={[200,200,400,400]}>
           <Image src="https://static.vecteezy.com/system/resources/previews/006/900/704/original/green-tick-checkbox-illustration-isolated-on-white-background-free-vector.jpg" />
         </Box>
         <h1>Your order has been placed successfully</h1>

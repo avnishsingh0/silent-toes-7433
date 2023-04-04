@@ -17,10 +17,9 @@ const OrderHistory = () => {
       <Navbar />
       <br />
 
-      <Box minHeight="635" p={8} w="70%" m="auto" mt={["","","","150px"]}>
+      <Box p={[3,3,1,8]} w={["100%","100%","70%","70%"]} m="auto" mt={["60px","60px","90px","150px"]}>
         <Heading
-          fontSize="25px"
-          mt="1%"
+          fontSize={["20px","20px","25px","25px"]}
           textAlign="left"
           p="2"
           bg="teal.400"
@@ -31,7 +30,7 @@ const OrderHistory = () => {
         {orders.length === 0 ? (
           <Text
             textAlign="center"
-            fontSize="28px"
+            fontSize={["20px","20px","25px","28px"]}
             color="gray"
             mt="1%"
             fontWeight="bolder"
@@ -48,7 +47,7 @@ const OrderHistory = () => {
                     <Grid
                       key={order.id}
                       borderRadius="20px 20px 20px 20px"
-                      fontSize="16px"
+                      fontSize={["14px","14px","16px","16px"]}
                       textAlign="center"
                     >
                       <Link to={`/products/${order.id}`}>
@@ -61,9 +60,9 @@ const OrderHistory = () => {
                           color="gray.600"
                         >
                           <Box>
-                            <Image src={order.imageTsrc} boxSize="180px" />
+                            <Image src={order.imageTsrc} boxSize="180px"/>
                           </Box>
-                          <Box textAlign="left">
+                          <Box textAlign="left" >
                             <Text fontWeight="bold">
                               Product ID: {order.productId}
                             </Text>
@@ -71,7 +70,7 @@ const OrderHistory = () => {
                               Order Date : {currentDate}
                             </Text>
                             <Text
-                              fontSize="18px"
+                               fontSize={["14px","14px","18px","18px"]}
                               fontWeight="bold"
                               textTransform="capitalize"
                             >
@@ -80,19 +79,19 @@ const OrderHistory = () => {
                             <Text
                               textTransform="capitalize"
                               fontWeight="500"
-                              fontSize="17px"
+                              fontSize={["14px","14px","17px","17px"]}
                             >
                               {order.productType}
                             </Text>
-                            <Text fontWeight="bold" fontSize="18px">
+                            <Text fontWeight="bold"  fontSize={["14px","14px","18px","18px"]}>
                               Price: ₹{" "}
                               {Math.round(order.price + order.price * 0.18)}.00
                               /-
                             </Text>
-                            <Text fontWeight="500" fontSize="15px">
+                            <Text fontWeight="500"  fontSize={["14px","14px","15px","15px"]}>
                               Colors : {order.colors}
                             </Text>
-                            <Text fontWeight="500" fontSize="15px">
+                            <Text fontWeight="500"  fontSize={["14px","14px","15px","15px"]}>
                               Dimension : {order.dimension}
                             </Text>
                             <Text fontWeight="500" fontSize="15px">

@@ -36,9 +36,9 @@ const Wishlist = () => {
       <Navbar />
       <br />
       <br />
-      <Box minHeight="635" w="80%" m="auto" mt={["40px","40px","100px","100px"]}>
+      <Box minHeight="635" w={["100%","100%","80%","80%"]} m="auto" mt={["40px","40px","50px","100px"]}>
         <Heading
-          fontSize="25px"
+          fontSize={["15px","15px","25px","25px"]}
           textAlign="left"
           p="2"
           bg="teal.400"
@@ -51,7 +51,7 @@ const Wishlist = () => {
         {wishlistItems.length === 0 ? (
           <Text
             textAlign="center"
-            fontSize="28px"
+            fontSize={["15px","15px","28px","28px"]}
             color="gray"
             mt="1%"
             fontWeight="bolder"
@@ -75,13 +75,13 @@ const Wishlist = () => {
                   >
                     <Flex justify="space-between" mb="2">
                       <Text
-                        fontSize="xl"
+                       fontSize={["10px","10px","xl","xl"]}
                         fontWeight="bold"
                         textTransform="capitalize"
                       >
                         {item.productRefLink}
                       </Text>
-                      <Flex justify="space-between" mb="2" w="28%">
+                      <Flex justify="space-between" mb="2" w={["58%","58%","48%","28%"]} fontSize={["sm","sm","xl","xl"]} >
                         <Button
                           colorScheme="red"
                           onClick={() => handleAddToCart(item)}
@@ -102,22 +102,22 @@ const Wishlist = () => {
                         src={item.imageTsrc}
                         alt={item.name}
                         height="100"
-                        width="180"
+                        width={["120","","120","180"]}
                       />
 
                       <Box ml="4">
                         <Text
-                          fontSize="lg"
+                          fontSize={["sm","sm","lg","lg"]}
                           fontWeight="bold"
                           textTransform="capitalize"
                         >
                           {item.name}
                         </Text>
-                        <Text fontSize="lg" fontWeight="bold">
+                        <Text fontSize={["sm","sm","lg","lg"]} fontWeight="bold">
                           Price : ₹ {item.price}.00 /-
                         </Text>
                         <Text
-                          fontSize="lg"
+                         fontSize={["sm","sm","lg","lg"]}
                           fontWeight="bold"
                           color="gray.600"
                           textTransform="capitalize"
@@ -125,7 +125,7 @@ const Wishlist = () => {
                           {item.productType}
                         </Text>
                         <Text
-                          fontSize="lg"
+                          fontSize={["sm","sm","lg","lg"]}
                           fontWeight="bold"
                           color="gray.600"
                           textTransform="capitalize"
@@ -133,7 +133,7 @@ const Wishlist = () => {
                           Colour : {item.colors}
                         </Text>{" "}
                         <Text
-                          fontSize="md"
+                          fontSize={["sm","sm","md","md"]}
                           fontWeight="600"
                           color="gray.600"
                           textTransform="capitalize"
