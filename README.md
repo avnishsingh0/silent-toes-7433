@@ -91,38 +91,13 @@
 <br/>
 
 
-<div align="center">
-  <img width="80%" alt="Home page" src="https://i.imgur.com/PwgwUDX.png"/>
-</div>
 <br/>
-
-
-## Navbar :
-
-<table>
-  <tr>
-    <td>
-      <img src="https://i.imgur.com/NRf9CVc.png" alt="Product-list">
-    </td>
-    <td>
-      <img src="https://i.imgur.com/rhjgVpr.png" alt="Product-register">
-    </td>
-  </tr>
-  
-</table>
-
-<br/>
-
-
 
 ## Signup Page :
 
 <h3>For signup, user need to fill required details. If user is already exists then it will show you an error. So you can't register again with the same email. </h3>
 <br/>
 
-<div align="center">
-<img width="80%" src="https://i.imgur.com/xIrPSpW.png" alt ="signup page" />
-</div>
 
 <br/>
 
@@ -134,7 +109,7 @@
 <br/>
 
 <div align="center">
-<img width="80%" src="https://i.imgur.com/06ibc3k.png" alt ="signin page" />
+<img width="80%" src="" alt ="signin page" />
 </div>
 
 
@@ -146,7 +121,7 @@
 <br/>
 
 <div align="center">
-<img width="80%" src="https://i.imgur.com/wBOOprb.png" alt="Product page 1"/> 
+<img width="80%" src="" alt="Product page 1"/> 
 </div>
 
 
@@ -158,7 +133,7 @@
 <br/>
 
 <div align="center">
-<img  width="80%" src="https://i.imgur.com/vCb1o5r.png" alt="Product page 2"/>
+<img  width="80%" src="" alt="Product page 2"/>
 </div>
 
 
@@ -170,7 +145,7 @@
 <br/>
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/EyoAE0h.png" alt=" cart page">
+  <img width="80%" src="" alt=" cart page">
 </div>
 
 <br/>
@@ -181,7 +156,7 @@
 <br/>
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/T8dxl99.png" alt="Shipping page">
+  <img width="80%" src="" alt="Shipping page">
 </div>
 
 <br/>
@@ -193,7 +168,7 @@
 <br/>
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/dfMTIxF.png" alt="Flight checkout page">
+  <img width="80%" src="" alt="Flight checkout page">
 </div>
 
 <br/>
@@ -205,7 +180,7 @@
 <br/>
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/31Qvlmm.png" alt="Payment page">
+  <img width="80%" src="" alt="Payment page">
 </div>
 
 <br/>
@@ -216,34 +191,11 @@
 <br/>
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/xQ408wP.png" alt="Confirmation page">
+  <img width="80%" src="" alt="Confirmation page">
 </div>
 
 <br/>
 
-## Order History Page :
-
-<h3>Here users can see all of their purchases.</h3>
-<br/>
-
-<div align="center">
-  <img width="80%" src="https://i.imgur.com/mzksTk4.png" alt="Order History page">
-</div>
-
-<br/>
-
-
-## Wishlist Page :
-
-<h3>Here users can see their product which are added in Wishlist.</h3>
-<br/>
-
-<div align="center">
-  <img width="80%" src="https://i.imgur.com/IYJ2FLc.png" alt="Wishlist page">
-</div>
-
-<br/>
-<br/>
 
 ## Admin Section
 
@@ -253,15 +205,15 @@
 <table>
   <tr>
     <td>
-      <img src="https://i.imgur.com/ARFXi8R.png" alt="Product-list">
+      <img src="" alt="Product-list">
     </td>
     <td>
-      <img src="https://i.imgur.com/Z0BdrJy.png" alt="Product-register">
+      <img src="" alt="Product-register">
     </td>
   </tr>
   <tr>
     <td>
-      <img src="https://i.imgur.com/UDUt1hR.png" alt="Product-edit">
+      <img src="" alt="Product-edit">
     </td>
   </tr>
 </table>
@@ -269,7 +221,7 @@
 ## Footer :
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/JNsYNwa.png" alt="Footer">
+  <img width="80%" src="" alt="Footer">
 </div>
 <br/>
 <br/>
