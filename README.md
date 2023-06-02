@@ -64,26 +64,42 @@
 
 # Features
 
-- Account creation, login, signup and logout functionality.
+#user
+- Account creation, login, signup and logout functionality with eamil verification using smpt.
 - Sign-up and log-in validations.
 - JWT (JSON Web Token) Authentication and BcryptJS Password Hashing 
-- Product Filters Based on Gender, Colour, Shape, Glasses Frame
-- Product Sorting Based on Price
-- Product Filtering and Sorting work together 
+- Product Filters Based on Categories 
 - Products Pagination (Default 12 Products Per Page)
 - Cart Add and Remove Items 
 - Cart Update Quantities 
 - Wishlist Add/Remove Items
 - Order Summary
+- Profile page with able to edit
 - My Orders Section for details of all ordered item
 - From Wishlist to directly Add-to-Cart feature
 - Coupons are provided for the discount
-- Payment Gateway
+- Payment Gateway with stripe and paypal
 - User Authentication before placing an order
 - Data fetching from Backend. 
 
 <br/>
-
+#vender 
+- Account creation, login, signup and logout functionality with eamil verification using smpt.
+- Sign-up and log-in validations.
+- JWT (JSON Web Token) Authentication and BcryptJS Password Hashing 
+- Create Product with categories 
+- Create Evnets
+- Create Discount coupon
+- All orders Status
+- All Product
+- Refund 
+- Setting page
+- Profile Page
+- Chat with costumer 
+- Withdraw money
+- Vender Dashboard 
+- Products Pagination (Default 12 Products Per Page)
+<br/>
 # Let's Dive into What we have made
 
 ## Home Page :
