@@ -3,14 +3,15 @@
 <h3 align="center">💻Project Unique Name : EYECARE ✈️</h3>
 
 <br/>
-<h3 align="justify" width="80%">Lenskart is an Indian online eyewear retailer, based in Delhi and founded in 2010 by Peyush Bansal, Amit Chaudhary, and Sumeet Kapahi. They offer eyeglasses, sunglasses, contact lenses, and accessories, with services such as free home trial and virtual try-on, and operate physical stores across India.</h3>
+<h3 align="justify" width="80%">This website provides a seamless shopping experience for customers. Users can browse through various products, add items to their cart, and proceed to checkout. Integration with a payment gateway ensures secure and convenient online transactions. Additionally, a chat feature is implemented to enable real-time communication between users and vendors for queries or assistance.</h3>
 
 <br/>
 
-### Frontend Deployed URL 👉 [Click here](https://eyescare.vercel.app/)
+### Frontend Deployed URL 👉 [Click here](https://vender-app-frontend-dwr3.vercel.app/)
 
-### Backend API 👉 [Click here](https://busy-blue-chick-tie.cyclic.app)
+### Backend API 👉 [Click here](https://venderappbackend-production.up.railway.app/)
 
+### Chatting API 👉 [Click here](https://vernderappchatting-production.up.railway.app/)
 <br/>
 
 
