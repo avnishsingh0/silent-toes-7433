@@ -82,7 +82,7 @@
 - User Authentication before placing an order
 - Data fetching from Backend. 
 
-<br/>
+
 #vender 
 - Account creation, login, signup and logout functionality with eamil verification using smpt.
 - Sign-up and log-in validations.
