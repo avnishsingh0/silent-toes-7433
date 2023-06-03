@@ -1,20 +1,11 @@
-<h1 align="center">✨✨Welcome to ShopO✨✨</h1>
-
-<h3 align="center">💻Project Unique Name : ShopO ✈️</h3>
-
+<h1 align="center">✨✨Welcome to Lenskart_Clone✨✨</h1>
+<h3 align="center">💻Project Unique Name : EYECARE ✈️</h3>
 <br/>
-<h3 align="justify" width="80%">This website provides a seamless shopping experience for customers. Users can browse through various products, add items to their cart, and proceed to checkout. Integration with a payment gateway ensures secure and convenient online transactions. Additionally, a chat feature is implemented to enable real-time communication between users and vendors for queries or assistance.</h3>
-
+<h3 align="justify" width="80%">Lenskart is an Indian online eyewear retailer, based in Delhi and founded in 2010 by Peyush Bansal, Amit Chaudhary, and Sumeet Kapahi. They offer eyeglasses, sunglasses, contact lenses, and accessories, with services such as free home trial and virtual try-on, and operate physical stores across India.</h3>
 <br/>
-
-### Frontend Deployed URL 👉 [Click here](https://vender-app-frontend-dwr3.vercel.app/)
-
-### Backend API 👉 [Click here](https://venderappbackend-production.up.railway.app/)
-
-### Chatting API 👉 [Click here](https://vernderappchatting-production.up.railway.app/)
+### Frontend Deployed URL 👉 [Click here](https://eyescare.vercel.app/)
+### Backend API 👉 [Click here](https://busy-blue-chick-tie.cyclic.app)
 <br/>
-
-
  <h2 align="left">
 <img src="https://art.pixilart.com/486745d4bb1ef18.gif"  width="20" height="20" align="center">
  Languages and Tools
@@ -33,7 +24,6 @@
 <br/>
   <img src = "https://img.shields.io/badge/chakra ui-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white" align="center" alt="chakra-ui"/>
 </div>
-
   <div align="center"><h3 align="center">Backend</h3> 
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" align="center" alt="nodejs" />
 <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" align="center" alt="expressjs"/>
@@ -49,7 +39,6 @@
    <img src ="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" align="center" alt="render">
      <br />
      <br />
-
    <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white"  align="center" alt="vscode"/>
    <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" align="center" alt="slack"/>
  </div>
@@ -59,55 +48,33 @@
   <img src="https://img.shields.io/badge/cyclic-5458F6?style=for-the-badge&logo=cyclic&logoColor=white" alt="cyclic" />
 </div>
 </p>
-
 <br/>
-
 # Features
-
-#user
-- Account creation, login, signup and logout functionality with eamil verification using smpt.
+- Account creation, login, signup and logout functionality.
 - Sign-up and log-in validations.
 - JWT (JSON Web Token) Authentication and BcryptJS Password Hashing 
-- Product Filters Based on Categories 
+- Product Filters Based on Gender, Colour, Shape, Glasses Frame
+- Product Sorting Based on Price
+- Product Filtering and Sorting work together 
 - Products Pagination (Default 12 Products Per Page)
 - Cart Add and Remove Items 
 - Cart Update Quantities 
 - Wishlist Add/Remove Items
 - Order Summary
-- Profile page with able to edit
 - My Orders Section for details of all ordered item
 - From Wishlist to directly Add-to-Cart feature
 - Coupons are provided for the discount
-- Payment Gateway with stripe and paypal
+- Payment Gateway
 - User Authentication before placing an order
 - Data fetching from Backend. 
-
-
-#vender 
-- Account creation, login, signup and logout functionality with eamil verification using smpt.
-- Sign-up and log-in validations.
-- JWT (JSON Web Token) Authentication and BcryptJS Password Hashing 
-- Create Product with categories 
-- Create Evnets
-- Create Discount coupon
-- All orders Status
-- All Product
-- Refund 
-- Setting page
-- Profile Page
-- Chat with costumer 
-- Withdraw money
-- Vender Dashboard 
-- Products Pagination (Default 12 Products Per Page)
 <br/>
 # Let's Dive into What we have made
-
 ## Home Page :
 
 <h3>Go through the home page to know more about our website.</h3>
 <br/>
 <div align="center">
-  <img width="80%" alt="Home page" src="https://i.imgur.com/9Kt3r37.png"/>
+  <img width="80%" alt="Home page" src="https://i.imgur.com/PwgwUDX.png"/>
 </div>
 <br/>
 
@@ -117,10 +84,10 @@
 <table>
   <tr>
     <td>
-      <img src="https://i.imgur.com/nN382HY.png">
+      <img src="https://i.imgur.com/NRf9CVc.png" alt="Product-list">
     </td>
     <td>
-      <img src="https://i.imgur.com/PN5CvfX.jpg">
+      <img src="https://i.imgur.com/rhjgVpr.png" alt="Product-register">
     </td>
   </tr>
 
@@ -128,108 +95,85 @@
 
 <br/>
 
-## Signup Page :
-
+@@ -98,6 +116,9 @@
 <h3>For signup, user need to fill required details. If user is already exists then it will show you an error. So you can't register again with the same email. </h3>
 <br/>
 
 <div align="center">
-<img width="80%" src="https://i.imgur.com/6YauZFk.png" />
+<img width="80%" src="https://i.imgur.com/xIrPSpW.png" alt ="signup page" />
 </div>
 
 <br/>
 
-
-
-## Login Page :
-
-<h3>Users can login using their input credentials which provided while signup.</h3>
+@@ -109,7 +130,7 @@
 <br/>
 
 <div align="center">
-<img width="80%" src="https://i.imgur.com/NbO4hXF.png" />
+<img width="80%" src="" alt ="signin page" />
+<img width="80%" src="https://i.imgur.com/06ibc3k.png" alt ="signin page" />
 </div>
 
 
-<br/>
-
-## Product Page :
-
-<h3>Here users can Purchase their eyewear glasses .</h3>
+@@ -121,7 +142,7 @@
 <br/>
 
 <div align="center">
-<img width="80%" src="https://i.imgur.com/85zor2V.png" alt="Product page 1"/>
+<img width="80%" src="" alt="Product page 1"/> 
+<img width="80%" src="https://i.imgur.com/wBOOprb.png" alt="Product page 1"/>
 </div>
 
 
-<br/>
-
-## Singal Product Page :
-
-<h3>Here users can see details information regarding of particular eyewear glass .</h3>
+@@ -133,7 +154,7 @@
 <br/>
 
 <div align="center">
-<img width="80%" src="https://i.imgur.com/t28Rejl.png" alt="Product page 2"/>
+<img  width="80%" src="" alt="Product page 2"/>
+<img width="80%" src="https://i.imgur.com/vCb1o5r.png" alt="Product page 2"/>
 </div>
 
 
-<br/>
-
-## Cart Page :
-
-<h3>Here users can see their added Product in the Cart .</h3>
+@@ -145,7 +166,7 @@
 <br/>
 
 <div align="center">
- <img width="80%" src="https://i.imgur.com/0R0KFHe.png" alt=" cart page">
+  <img width="80%" src="" alt=" cart page">
+ <img width="80%" src="https://i.imgur.com/EyoAE0h.png" alt=" cart page">
 </div>
 
 <br/>
-
-## Shipping Page :
-
-<h3>Here users can enter their shipping details .</h3>
+@@ -156,7 +177,7 @@
 <br/>
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/9QnyZ6m.png" alt="Shipping page">
+  <img width="80%" src="" alt="Shipping page">
+  <img width="80%" src="https://i.imgur.com/T8dxl99.png" alt="Shipping page">
 </div>
 
 <br/>
-
-
-## Checkout Page :
-
-<h3>Here users can checkout their Purchase .</h3>
+@@ -168,7 +189,7 @@
 <br/>
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/9QnyZ6m.png" alt="Flight checkout page">
+  <img width="80%" src="" alt="Flight checkout page">
+  <img width="80%" src="https://i.imgur.com/dfMTIxF.png" alt="Flight checkout page">
 </div>
 
 <br/>
-
-
-## Payments Page :
-
-<h3>Here users can make the payment .</h3>
+@@ -180,7 +201,7 @@
 <br/>
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/RIh6tA6.png" alt="Payment page">
+  <img width="80%" src="" alt="Payment page">
+  <img width="80%" src="https://i.imgur.com/31Qvlmm.png" alt="Payment page">
 </div>
 
 <br/>
-
-## Confirmation Page :
-
-<h3>Here after payment users get confirmation for their purchase.</h3>
+@@ -191,7 +212,28 @@
 <br/>
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/48kwFza.png" alt="Confirmation page">
+  <img width="80%" src="" alt="Confirmation page">
+  <img width="80%" src="https://i.imgur.com/xQ408wP.png" alt="Confirmation page">
 </div>
 
 <br/>
@@ -239,7 +183,7 @@
 <br/>
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/hjBigu8.png" alt="Wishlist page">
+  <img width="80%" src="https://i.imgur.com/IYJ2FLc.png" alt="Wishlist page">
 </div>
 
 <br/>
@@ -250,80 +194,25 @@
 <br/>
 
 <div align="center">
-  <img width="80%" src="https://i.imgur.com/wDxTxcW.png" alt="Order History page">
+  <img width="80%" src="https://i.imgur.com/mzksTk4.png" alt="Order History page">
 </div>
 
 <br/>
-
-## User Profile Page :
-<h3>Here users profile page.</h3>
-<br/>
-<div align="center">
-  <img width="80%" src="https://i.imgur.com/gIOt0TI.png" alt="Order History page">
-</div>
-<br/>
-
-## Refund Status :
-<h3>Here refund status.</h3>
-<br/>
-<div align="center">
-  <img width="80%" src="https://i.imgur.com/7owhNvM.png" alt="Order History page">
-</div>
-<br/>
-## Messages vender :
-<h3>Here Message </h3>
-<br/>
-<div align="center">
-  <img width="80%" src="https://i.imgur.com/7owhNvM.png" alt="Order History page">
-</div>
-<br/>
-
-## Track Order status :
-<h3>Track Order status </h3>
-<br/>
-<div align="center">
-  <img width="80%" src="https://i.imgur.com/VvrBgbW.png" alt="Order History page">
-</div>
-<br/>
-
-## Chenge Password user :
-<h3>Chenge Password user </h3>
-<br/>
-<div align="center">
-  <img width="80%" src="https://i.imgur.com/LR4kBUa.png" alt="Order History page">
-</div>
-<br/>
-## Users Address:
-<h3>Users Address</h3>
-<br/>
-<div align="center">
-  <img width="80%" src="https://i.imgur.com/sbSiawX.png" alt="Order History page">
-</div>
-<br/>
-
-## FAQ Page:
-<h3>FAQ Page</h3>
-<br/>
-<div align="center">
-  <img width="80%" src="https://i.imgur.com/UCe4UxR.png" alt="Order History page">
-</div>
-<br/>
-## Vender Section
-
-<h3>Admin Section is responsible for maintaining and updating the data of the website .</h3>
-<br/>
-
+@@ -205,23 +247,23 @@
 <table>
   <tr>
     <td>
+      <img src="" alt="Product-list">
       <img src="https://i.imgur.com/ARFXi8R.png" alt="Product-list">
     </td>
     <td>
+      <img src="" alt="Product-register">
       <img src="https://i.imgur.com/Z0BdrJy.png" alt="Product-register">
     </td>
   </tr>
   <tr>
     <td>
+      <img src="" alt="Product-edit">
       <img src="https://i.imgur.com/UDUt1hR.png" alt="Product-edit">
     </td>
   </tr>
@@ -332,85 +221,8 @@
 ## Footer :
 
 <div align="center">
+  <img width="80%" src="" alt="Footer">
  <img width="80%" src="https://i.imgur.com/JNsYNwa.png" alt="Footer">
 </div>
 <br/>
 <br/>
-
- # Languages Used :
-
-<ul dir="auto">
- <ol dir="auto">◉ JavaScript : 98.4%</ol>
- <ol dir="auto">◉ Others : 1.6%</ol>
- </ul>
- 
-### This report is provided by the Github language used stats. So, this is the total percentage of the coding languages.
-
-<br/><br/>
-
-# Prerequisites :
-
-- Node.js
-- npm
-
-# Installing :
-
-1. Clone the repository to your local machine
-2. Navigate to the project directory
-3. Run `npm install` to install the required dependencies
-4. Run `npm start` to start the development server
-
-<br/><br/>
- 
-# Our Team :
-
- <ul>
-	<li><a href="https://github.com/souravpl8092">Avnish Kumar (Team Lead)</a></li>
-        <li><a href="https://github.com/raveenakale475">Ayushi Vashisth (Team Member)</a></li>
-        <li><a href="https://github.com/govind-kumarr">Vivek Agrawal (Team Member)</a> </li>
-        <li><a href="https://github.com/Devendra0192">Bhuvan Jangra (Team Member)</a></li>
-  </ul>
-
-### This is a collaborative project built by a team of 4 fullstack web developers and executed in 5 days.
-
-<br/><br/>
-
-# Team Work Efforts :
-
-First of all, we created a Slack and zoom group to establish communication between all the team members. 
-Then we connected over zoom meet for further discussion about assigned project.
-
-In a zoom meet we divideed small parts of project to all the team-member.
-
-We discussed about past days work and present day work, if any one face issue all the team member helps to solve the problem.
-
-All push the data in Git-hub to their respective branch and merge them to main branch.
-
-Finally we make the presentation of the project.
-<br/><br/>
-
-# Our Learnings : 
-On this journey we faced many issues, but we keep motivated each other with patience. 
-
-- We all learned how to read and understand the code of other team members.
-
-- We learned how to write more efficient and clean code.
-
-- Even though  We also learned how to plan a project and how to execute it step by step.
-
-- By this Project we have learned how to collaborate and communicate with team effectively and improving the productivity.
-
-- We also got a glimpse of using GitHub for the version control.
-<br/><br/>
-
-# Contributing
-
-### We welcome contributions to the Lenskart Clone website. If you have an idea for a new feature or have found a bug, please open an issue in the repository.
-
-<br/>
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-<h1 align="center">✨Thank You✨</h1>
